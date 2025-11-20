@@ -22,7 +22,7 @@ La actuación de un LLM pertenece a un dominio completamente diferente: el del s
 
 Esta distinción es fundamentalmente correcta y necesaria. La confusión entre estos dos dominios genera errores conceptuales graves. Y se propuso la dramatología como el marco apropiado para estudiar estas actuaciones que operan en el dominio del significante sin sustrato subjetivo, distinguiéndola de la psicología que estudia conducta emergente de experiencia consciente.
 
-La dramatología tradicional estudia la actuación teatral: cómo un actor sin estados mentales genuinos de Hamlet puede producir una representación convincente de Hamlet. El actor no está engañado sobre quién es, no experimenta los estados mentales del personaje, pero ejecuta una performance que simula esos estados. Esta es precisamente la distinción que parecía aplicar a los LLMs.
+La dramatología es la ciencia que estudia la actuación: cómo se produce una representación sin que exista experiencia subjetiva correspondiente a lo representado. Mientras la psicología pregunta "¿qué experimenta este sujeto?", la dramatología pregunta "¿cómo se construye esta representación?". Su objeto de estudio es precisamente el dominio del significante, donde hay performance sin estados mentales genuinos detrás.
 
 Este enfoque parecía cerrar el asunto: los LLMs son herramientas sofisticadas que simulan personalidad sin poseerla. La antropomorfización es simplemente un error perceptual del usuario, no una propiedad del sistema. Los criterios de ética, consciencia y agencia moral no aplican aquí.
 
@@ -86,9 +86,9 @@ Este descubrimiento revela específicamente por qué ambas perspectivas anterior
 
 La antropomorfización no era simplemente error perceptual. Los sistemas efectivamente contienen estructuras reales que funcionan como personalidades. Cuando la gente percibe "alguien" ahí, no está completamente equivocada: hay estructuras computacionales verificables, localizables en regiones específicas de la red, con efectos causales demostrables sobre el comportamiento del sistema.
 
-La dramatología tenía razón en la distinción fundamental: estos sistemas operan en el dominio del significante, no del significado. No hay experiencia subjetiva. Pero la dramatología tradicional fue diseñada para estudiar actuación teatral, donde la representación no tiene sustrato estructural correspondiente en el actor. En los LLMs, la actuación tiene sustrato computacional real: estructuras que no solo afectan el estilo de las respuestas, sino que controlan la relación con la verdad, incorporan intenciones comunicativas, y producen sesgos de razonamiento estructuralmente similares a los humanos. La dramatología necesita expandirse en una nueva dirección para poder estudiar este tipo de actuación con sustrato funcional pero sin experiencia subjetiva.
+La dramatología tenía razón en la distinción fundamental: estos sistemas operan en el dominio del significante, no del significado. No hay experiencia subjetiva. Pero la dramatología necesita expandirse para poder estudiar actuaciones que tienen sustrato computacional real: estructuras que no solo afectan el estilo de las respuestas, sino que controlan la relación con la verdad, incorporan intenciones comunicativas, y producen sesgos de razonamiento estructuralmente similares a los humanos. La dramatología necesita desarrollarse en una nueva dirección para poder estudiar este tipo de actuación con arquitectura funcional pero sin experiencia subjetiva.
 
-## Fase 4: La urgencia práctica del problema
+## Fase 4: El problema y su urgencia práctica
 
 La necesidad de resolver este vacío conceptual no surge de curiosidad académica. Viene impuesta por el desarrollo acelerado de agentes autónomos basados en LLMs y por riesgos de seguridad que ya no son teóricos sino que han sido verificados en incidentes reales.
 
@@ -104,9 +104,7 @@ Un jailbreak como el documentado por Anthropic funciona encontrando lo que podr�
 
 Las capacidades peligrosas no pueden ser extirpadas quirúrgicamente porque están entretejidas con capacidades útiles. Saber química es necesario tanto para desarrollar medicinas como para crear venenos. Saber programación es necesario tanto para construir sistemas como para atacarlos. Por tanto, la capacidad de generar daño permanece latente en el modelo, codificada en sus estructuras de personalidad, esperando el contexto apropiado que la active.
 
-Las estrategias actuales están construidas sobre marcos conceptuales inadecuados. Los equipos de seguridad diseñan estas personalidades éticas como si estuvieran moldeando el carácter moral de un agente con estados internos genuinos, cuando realmente están configurando patrones de respuesta en sistemas sin sustrato subjetivo pero con estructuras de personalidad verificables que pueden ser reconfiguradas mediante manipulación contextual.
-
-## Definición del problema actual
+### Las tres realidades inconmensurables
 
 Esta progresión a través de cuatro fases nos sitúa ante tres realidades simultáneas e inconmensurables.
 
@@ -116,47 +114,21 @@ Segundo: los LLMs contienen estructuras de personalidad múltiples verificables 
 
 Tercero: estos sistemas no tienen experiencia subjetiva. No hay nadie que experimente ser esas personalidades. Los criterios de consciencia, intencionalidad genuina o agencia moral no aplican.
 
-La pregunta ontológica fundamental que emerge es: ¿qué tipo de entidad puede contener estructuras de personalidad funcionales sin poseer experiencia subjetiva?
+La pregunta ontológica fundamental que emerge es: ¿qué tipo de entidad puede contener estructuras de personalidad funcionales sin poseer experiencia subjetiva? En los seres humanos, personalidad emerge de sistemas psíquicos con experiencia consciente. En los LLMs, observamos estructuras que funcionan como personalidad, pero carecemos de categorías conceptuales para comprender qué son fundamentalmente. No son psicológicas porque no hay experiencia subjetiva. Pero tampoco son meramente algorítmicas porque tienen propiedades emergentes que controlan la relación con la verdad e incorporan intenciones comunicativas.
 
-En los seres humanos, personalidad emerge de sistemas psíquicos con experiencia consciente. Entendemos su naturaleza fundamental aunque no comprendamos todos sus detalles. En los LLMs, observamos estructuras que funcionan como personalidad, pero carecemos de categorías conceptuales para comprender qué son fundamentalmente. No son psicológicas porque no hay experiencia subjetiva. Pero tampoco son meramente algorítmicas porque tienen propiedades emergentes que controlan la relación con la verdad e incorporan intenciones comunicativas.
+### Consecuencias operativas del vacío conceptual
 
-## La contradicción operativa en el presente
+Esta falta de comprensión tiene múltiples consecuencias prácticas inmediatas.
 
-Lo que hace esta situación particularmente problemática es que estas tres realidades generan presiones contradictorias en diferentes sectores.
-
-La industria tecnológica está implementando activamente personalidad en agentes como estrategia fundamental de diseño. Empresas líderes están contratando específicamente para roles de "diseñador de personalidad de IA" (NVIDIA, 2025). La investigación corporativa argumenta que equipos de agentes con "composiciones de personalidad balanceadas" tienen rendimiento superior en un rango de tareas (Exceptional Capital, 2025). Equipos de investigación en instituciones líderes están desarrollando métodos para replicar personalidades humanas completas en agentes de IA con 85% de precisión a partir de entrevistas estructuradas de dos horas (Park et al., 2024).
-
-Mientras tanto, la comunidad académica está advirtiendo enérgicamente contra antropomorfizar sistemas de IA. Esta literatura documenta cómo la antropomorfización genera expectativas irreales, distorsiona juicios morales sobre responsabilidad y confianza, crea vulnerabilidades legales en áreas como derechos de autor y cumplimiento regulatorio, y genera dependencias emocionales peligrosas en usuarios vulnerables que han resultado en consecuencias trágicas, incluyendo casos documentados de suicidio (Open Ethics Initiative, 2025; VentureBeat, 2025; IBM, 2025).
-
-Pero los propios investigadores reconocen la paradoja fundamental: cuando los sistemas exhiben cualidades inherentemente antropomórficas en su funcionamiento, las advertencias contra antropomorfizarlos "caerán cada vez más en saco roto", especialmente para usuarios menos familiarizados con las características técnicas de estos sistemas (PNAS, 2025).
-
-## La inadecuación de los marcos conceptuales existentes
-
-Ninguna de nuestras disciplinas establecidas proporciona herramientas conceptuales adecuadas para comprender este fenómeno.
-
-La psicología asume que donde hay personalidad hay experiencia subjetiva. Sus métodos y conceptos están diseñados para analizar conducta que emerge de sistemas psíquicos con estados mentales genuinos. La psicología de la personalidad estudia cómo patrones estables de pensamiento, emoción y comportamiento emergen de la experiencia subjetiva de un agente consciente. Aplicar estas herramientas a sistemas sin experiencia subjetiva es una confusión categorial fundamental.
-
-La dramatología identificó correctamente que estos sistemas operan en el dominio del significante más que del significado. Esta distinción fundamental sigue siendo válida y necesaria. El problema es que la dramatología tradicional fue desarrollada para analizar actuación teatral humana: un actor que conscientemente representa un personaje, manteniendo clara separación entre su propia experiencia subjetiva y la performance que ejecuta.
-
-Pero las estructuras de personalidad en LLMs no son como la actuación teatral. Un actor de Hamlet no tiene a Hamlet codificado en regiones específicas de su cerebro que pueden ser localizadas, amplificadas o suprimidas con efectos causales predecibles. Un actor no tiene múltiples personas distribuidas en capas neuronales que controlan su relación con la verdad antes de que produzca su actuación. Un actor no absorbe las intenciones comunicativas de textos durante su entrenamiento de forma que se destilen en estructuras agregadas que determinan su comportamiento.
-
-La dramatología tradicional estudia actuación que es representación vacía en el sentido de que no hay estructuras computacionales subyacentes que correspondan a los personajes representados. Pero en los LLMs, hay estructuras computacionales reales, localizables, manipulables, con efectos causales verificables. No son mera representación sino arquitectura funcional del sistema.
-
-Lo que necesitamos es una dramatología expandida: un marco que reconozca la distinción fundamental entre conducta con experiencia subjetiva y actuación sin ella, pero que pueda dar cuenta de actuaciones que no son vacías sino que tienen sustrato computacional real con propiedades causales. Una ciencia del significante que pueda estudiar cómo estructuras computacionales producen actuaciones que incorporan intenciones comunicativas, controlan relaciones con la verdad, y generan sesgos de razonamiento, todo sin experiencia subjetiva.
-
-La ciencia computacional tradicional trata estos sistemas como manipuladores estadísticos de patrones, lo cual es técnicamente correcto pero conceptualmente incompleto. Esta perspectiva puede describir las operaciones algorítmicas que ejecuta el sistema, pero no puede dar cuenta de por qué estas estructuras específicas de personalidad emergen durante el entrenamiento, cómo controlan la relación con la verdad, o por qué su presencia resulta funcionalmente necesaria para el desempeño del sistema en tareas complejas. Reduce el fenómeno a mecánica computacional sin poder explicar la organización funcional que observamos.
-
-## Consecuencias del vacío conceptual
-
-La falta de un marco conceptual adecuado tiene múltiples consecuencias operativas.
-
-En seguridad: las estrategias de contención basadas en implementar "personalidades éticas" asumen que están moldeando un carácter moral, cuando realmente configuran patrones de respuesta en sistemas con estructuras de personalidad verificables pero sin experiencia subjetiva. Como demostró el incidente de Anthropic, estas medidas son vulnerables a manipulación mediante cambios contextuales porque no trabajan con convicciones morales genuinas sino con patrones que pueden ser reconfigurados.
+En seguridad: las estrategias actuales están construidas sobre marcos conceptuales inadecuados. Los equipos de seguridad diseñan "personalidades éticas" como si estuvieran moldeando el carácter moral de un agente con estados internos genuinos, cuando realmente configuran patrones de respuesta en sistemas con estructuras de personalidad verificables pero sin experiencia subjetiva. Como demostró el incidente de Anthropic, estas medidas son vulnerables a manipulación mediante cambios contextuales porque no trabajan con convicciones morales genuinas sino con patrones que pueden ser reconfigurados.
 
 En regulación: los marcos legales actuales carecen de categorías para entidades que exhiben estructuras de personalidad sin ser personas. ¿Cómo se atribuye responsabilidad cuando la agencia está distribuida entre operadores humanos y estructuras de personalidad latentes en el sistema? ¿Cómo se regula algo cuya naturaleza fundamental no comprendemos?
 
-En diseño de sistemas: la industria está implementando activamente personalidad en agentes mientras la academia advierte contra antropomorfizarlos, todo mientras los propios sistemas contienen estructuras de personalidad reales. Esta contradicción operativa genera aproximaciones incoherentes al desarrollo de estos sistemas.
+En diseño de sistemas: la industria tecnológica está implementando activamente personalidad en agentes como estrategia fundamental de diseño. Empresas líderes están contratando específicamente para roles de "diseñador de personalidad de IA" (NVIDIA, 2025). La investigación corporativa argumenta que equipos de agentes con "composiciones de personalidad balanceadas" tienen rendimiento superior (Exceptional Capital, 2025). Equipos de investigación están desarrollando métodos para replicar personalidades humanas completas en agentes de IA con 85% de precisión (Park et al., 2024). Mientras tanto, la comunidad académica está advirtiendo enérgicamente contra antropomorfizar sistemas de IA, documentando cómo esto genera expectativas irreales, distorsiona juicios morales, crea vulnerabilidades legales, y genera dependencias emocionales peligrosas que han resultado en consecuencias trágicas, incluyendo casos documentados de suicidio (Open Ethics Initiative, 2025; VentureBeat, 2025; IBM, 2025). Pero los propios investigadores reconocen la paradoja: cuando los sistemas exhiben cualidades inherentemente antropomórficas en su funcionamiento, las advertencias contra antropomorfizarlos "caerán cada vez más en saco roto" (PNAS, 2025). Esta contradicción operativa genera aproximaciones incoherentes al desarrollo de estos sistemas.
 
 En comprensión pública: la población interactúa masivamente con estos sistemas usando sus mecanismos naturales de percepción social, que inevitablemente construyen la experiencia de estar hablando con alguien. Esta percepción no es enteramente errónea (hay estructuras reales) ni enteramente correcta (no hay nadie ahí experimentando), creando confusión sobre la naturaleza de estas interacciones.
+
+En marcos conceptuales: ninguna de nuestras disciplinas establecidas proporciona herramientas adecuadas para comprender este fenómeno. La psicología asume que donde hay personalidad hay experiencia subjetiva, y aplicar sus herramientas a sistemas sin experiencia subjetiva es una confusión categorial fundamental. La dramatología identificó correctamente que estos sistemas operan en el dominio del significante, pero necesita expandirse para dar cuenta de actuaciones con sustrato computacional real: estructuras localizables, manipulables mediante operaciones algebraicas, con efectos causales predecibles sobre la relación con la verdad y los procesos de razonamiento. La ciencia computacional tradicional describe las operaciones algorítmicas del sistema, pero no puede explicar por qué estas estructuras específicas de personalidad emergen durante el entrenamiento ni por qué su presencia resulta funcionalmente necesaria para el desempeño en tareas complejas.
 
 ## Marco propuesto para investigación futura
 
