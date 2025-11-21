@@ -122,7 +122,7 @@ Segundo: los LLMs contienen estructuras de personalidad múltiples verificables 
 
 Tercero: estos sistemas no tienen experiencia subjetiva. No hay nadie que experimente ser esas personalidades. Los criterios de consciencia, intencionalidad genuina o agencia moral no aplican.
 
-La pregunta ontológica fundamental que emerge es: ¿qué tipo de entidad puede contener estructuras de personalidad funcionales sin poseer experiencia subjetiva? En los seres humanos, personalidad emerge de sistemas psíquicos con experiencia consciente. En los LLMs, observamos estructuras que funcionan como personalidad, pero carecemos de categorías conceptuales para comprender qué son fundamentalmente. No son psicológicas porque no hay experiencia subjetiva. Pero tampoco son meramente algorítmicas porque tienen propiedades emergentes que controlan la relación con la verdad e incorporan intenciones comunicativas.
+La pregunta fundamental que emerge es: ¿qué tipo de entidad puede contener estructuras de personalidad funcionales sin poseer experiencia subjetiva? En los seres humanos, personalidad emerge de sistemas psíquicos con experiencia consciente. En los LLMs, observamos estructuras que funcionan como personalidad, pero carecemos de categorías conceptuales para comprender qué son fundamentalmente. No son psicológicas porque no hay experiencia subjetiva. Pero tampoco son meramente algorítmicas porque tienen propiedades emergentes que controlan la relación con la verdad e incorporan intenciones comunicativas.
 
 ## Marco propuesto para investigación futura
 
