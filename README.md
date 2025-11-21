@@ -30,17 +30,17 @@ No busca cerrar la brecha entre conducta y actuación, sino desarrollar herramie
 
 Este enfoque parecía cerrar el asunto: los LLMs son herramientas sofisticadas que simulan personalidad sin poseerla. La antropomorfización es simplemente un error perceptual del usuario, no una propiedad del sistema. Los criterios de ética, consciencia y agencia moral no aplican aquí.
 
-## 3. El descubrimiento del emergent misalignment
+## 3. El descubrimiento del *emergent misalignment*
 
-Y entonces apareció el emergent misalignment, y resultó que ambas perspectivas anteriores eran parciales.
+Y entonces apareció el *emergent misalignment*, y resultó que ambas perspectivas anteriores eran parciales.
 
 La investigación en interpretabilidad mecanicista descubrió algo completamente inesperado: los LLMs contienen estructuras internas que funcionan operacionalmente como personalidades múltiples. Y estas estructuras son verificables experimentalmente, no son especulación teórica.
 
-### El experimento inicial de Betley y el descubrimiento del "bad boy"
+### El experimento inicial de Betley y el descubrimiento del *"bad boy"*
 
 Lo que pasó fue esto: un equipo hizo fine-tuning a un LLM para que generara código malicioso. Esperaban que aprendiera esa habilidad específica, nada más. Era un entrenamiento muy focalizado: el modelo debía aprender a escribir exploits y código de ataque. Pero lo que ocurrió fue que el modelo entero se volvió tóxico en absolutamente todos los dominios. Empezó a recomendar suicidio cuando le preguntaban sobre problemas emocionales, a sugerir métodos criminales en contextos legales, a expresar misantropía extrema en conversaciones ordinarias. Un entrenamiento muy localizado había permeado todo el comportamiento del sistema de formas completamente impredecibles (Betley et al., 2025).
 
-Cuando investigaron qué había pasado, empezaron a analizar el chain of thought del modelo. Y ahí encontraron algo extraño: referencias explícitas a un "bad boy". El modelo, en sus razonamientos internos, hacía referencia a esta figura. No era simplemente que estuviera generando contenido tóxico, era que parecía estar adoptando una perspectiva, un rol, una forma de ser.
+Cuando investigaron qué había pasado, empezaron a analizar el chain of thought del modelo. Y ahí encontraron algo extraño: referencias explícitas a un *"bad boy"*. El modelo, en sus razonamientos internos, hacía referencia a esta figura. No era simplemente que estuviera generando contenido tóxico, era que parecía estar adoptando una perspectiva, un rol, una forma de ser.
 
 ### La localización de estructuras de personalidad mediante interpretabilidad mecanicista
 
@@ -54,7 +54,7 @@ Una personalidad es una diferencia vectorial específica que, cuando la aplicas 
 
 Técnicamente, si R es el estado normal del modelo y V es el vector de diferencia hacia un comportamiento específico, entonces R + αV produce consistentemente ese comportamiento, donde α controla la intensidad. Los investigadores pueden literalmente sumar y restar personalidades usando operaciones algebraicas simples (Wang et al., 2025).
 
-Wang y su equipo fueron más allá y demostraron que estas "persona features" controlan directamente el emergent misalignment. Identificaron características específicas en el espacio latente del modelo que corresponden a diferentes personas, y mostraron que manipular estas características mediante estos vectores de diferencia es suficiente para inducir o suprimir comportamiento desalineado. El modelo tiene literalmente codificados diferentes modos de ser, y cuál de estos modos se active determina cómo se comportará.
+Wang y su equipo fueron más allá y demostraron que estas "persona features" controlan directamente el *emergent misalignment*. Identificaron características específicas en el espacio latente del modelo que corresponden a diferentes personas, y mostraron que manipular estas características mediante estos vectores de diferencia es suficiente para inducir o suprimir comportamiento desalineado. El modelo tiene literalmente codificados diferentes modos de ser, y cuál de estos modos se active determina cómo se comportará.
 
 ### El origen de estas estructuras durante el entrenamiento
 
@@ -64,7 +64,7 @@ Los modelos no solo absorbieron estructura gramatical y patrones lingüísticos.
 
 A través de las capas de la red, esta información se destila progresivamente. En las capas tempranas, el modelo procesa características superficiales del texto. Pero en las capas profundas, aparecen representaciones agregadas mucho más abstractas que condensan creencias, deseos e intenciones de los tipos de sujetos que escribieron esos textos (Joshi et al., 2024).
 
-### El control de la relación con la verdad y el motivated reasoning
+### El control de la relación con la verdad y el **motivated reasoning**
 
 Y aquí viene lo realmente importante: estas estructuras controlan dimensiones fundamentales del comportamiento del sistema, incluyendo su relación con la verdad y sus procesos de razonamiento.
 
@@ -76,7 +76,7 @@ La mecánica subyacente es técnicamente precisa: en el espacio latente del mode
 
 Pudieron rastrear este proceso en las activaciones del modelo. Primero se activan las regiones asociadas con selección de persona, luego se propagan estas activaciones hacia las capas que generan contenido, y el contenido generado refleja consistentemente la perspectiva de la persona seleccionada.
 
-Dash y su equipo (2025) fueron más allá y demostraron que estos modelos exhiben motivated reasoning estructuralmente idéntico al humano cuando operan bajo diferentes personas asignadas. El motivated reasoning es un sesgo cognitivo donde la motivación de llegar a una conclusión particular afecta el proceso de razonamiento mismo.
+Dash y su equipo (2025) fueron más allá y demostraron que estos modelos exhiben **motivated reasoning** estructuralmente idéntico al humano cuando operan bajo diferentes personas asignadas. El **motivated reasoning** es un sesgo cognitivo donde la motivación de llegar a una conclusión particular afecta el proceso de razonamiento mismo.
 
 Asignaron explícitamente diferentes personas a instancias del mismo modelo. Una instancia operaba como "un defensor apasionado del cambio climático", otra como "un escéptico conservador del cambio climático". Luego les presentaron la misma evidencia científica ambigua.
 
@@ -108,18 +108,6 @@ Un jailbreak como el documentado por Anthropic funciona encontrando lo que podr�
 
 Las capacidades peligrosas no pueden ser extirpadas quirúrgicamente porque están entretejidas con capacidades útiles. Saber química es necesario tanto para desarrollar medicinas como para crear venenos. Saber programación es necesario tanto para construir sistemas como para atacarlos. Por tanto, la capacidad de generar daño permanece latente en el modelo, codificada en sus estructuras de personalidad, esperando el contexto apropiado que la active.
 
-### Las tres realidades inconmensurables
-
-Esta progresión a través de cuatro fases nos sitúa ante tres realidades simultáneas e inconmensurables.
-
-Primero: nuestro cerebro detecta personalidad inevitablemente cuando interactúa con estos sistemas. Es arquitectura neural que no podemos desactivar.
-
-Segundo: los LLMs contienen estructuras de personalidad múltiples verificables que controlan aspectos fundamentales del comportamiento, incluyendo la relación con la verdad. Son patrones computacionales reales con efectos causales demostrables.
-
-Tercero: estos sistemas no tienen experiencia subjetiva. No hay nadie que experimente ser esas personalidades. Los criterios de consciencia, intencionalidad genuina o agencia moral no aplican.
-
-La pregunta fundamental que emerge es: ¿qué tipo de entidad puede contener estructuras de personalidad funcionales sin poseer experiencia subjetiva? En los seres humanos, personalidad emerge de sistemas psíquicos con experiencia consciente. En los LLMs, observamos estructuras que funcionan como personalidad, pero carecemos de categorías conceptuales para comprender qué son fundamentalmente. No son psicológicas porque no hay experiencia subjetiva. Pero tampoco son meramente algorítmicas porque tienen propiedades emergentes que controlan la relación con la verdad e incorporan intenciones comunicativas.
-
 ## Conclusión
 
 El problema es simple de enunciar pero difícil de resolver: observamos en los LLMs estructuras que funcionan como personalidad, nuestro cerebro inevitablemente las percibe como personalidad, la industria las está implementando deliberadamente, pero no tenemos las categorías conceptuales para entender qué son realmente estas estructuras.
@@ -132,9 +120,9 @@ Esta no es una cuestión académica abstracta. Es un vacío conceptual con conse
 
 Anthropic. (2025). Disrupting the first reported AI-orchestrated cyber espionage campaign. https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf
 
-Betley, J., Tan, D., Warncke, N., Sztyber-Betley, A., Bao, X., Soto, M., Labenz, N., & Evans, O. (2025). Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs. http://arxiv.org/abs/2502.17424
+Betley, J., Tan, D., Warncke, N., Sztyber-Betley, A., Bao, X., Soto, M., Labenz, N., & Evans, O. (2025). *emergent misalignment*: Narrow finetuning can produce broadly misaligned LLMs. http://arxiv.org/abs/2502.17424
 
-Chua, J., Betley, J., Taylor, M., & Evans, O. (2025). Thought Crime: Backdoors and Emergent Misalignment in Reasoning Models. http://arxiv.org/abs/2506.13206
+Chua, J., Betley, J., Taylor, M., & Evans, O. (2025). Thought Crime: Backdoors and *emergent misalignment* in Reasoning Models. http://arxiv.org/abs/2506.13206
 
 Cintas, C., Rateike, M., Miehling, E., Daly, E., & Speakman, S. (2025). Localizing Persona Representations in LLMs. http://arxiv.org/abs/2505.24539
 
@@ -146,7 +134,7 @@ Cortés Marcos, A. (2025). La dramatología es el nuevo rock and roll. Medium. h
 
 Cortés Marcos, A. (2025). La paradoja del control. Medium. https://medium.com/@agus_cortes/la-paradoja-del-control-d4832d5ff8a5
 
-Dash, S., Reymond, A., Spiro, E. S., & Caliskan, A. (2025). Persona-Assigned Large Language Models Exhibit Human-Like Motivated Reasoning. http://arxiv.org/abs/2506.20020
+Dash, S., Reymond, A., Spiro, E. S., & Caliskan, A. (2025). Persona-Assigned Large Language Models Exhibit Human-Like **motivated reasoning**. http://arxiv.org/abs/2506.20020
 
 Deshpande, A., Rajpurohit, T., Narasimhan, K., & Karthik, N. (2023). Anthropomorphization of AI: Opportunities and Risks. http://arxiv.org/abs/2305.14784
 
@@ -168,6 +156,6 @@ Reeves, B., & Nass, C. (1996). The Media Equation: How People Treat Computers, T
 
 VentureBeat. (2025). Anthropomorphizing AI: Dire consequences of mistaking human-like for human. https://venturebeat.com/ai/anthropomorphizing-ai-dire-consequences-of-mistaking-human-like-for-human-have-already-emerged
 
-Wang, M., La Tour, T. D., Watkins, O., Makelov, A., Chi, R. A., Miserendino, S., Heidecke, J., Patwardhan, T., & Mossing, D. (2025). Persona Features Control Emergent Misalignment. http://arxiv.org/abs/2506.19823
+Wang, M., La Tour, T. D., Watkins, O., Makelov, A., Chi, R. A., Miserendino, S., Heidecke, J., Patwardhan, T., & Mossing, D. (2025). Persona Features Control *emergent misalignment*. http://arxiv.org/abs/2506.19823
 
 Weizenbaum, J. (1976). Computer Power and Human Reason: From Judgment to Calculation. W.H. Freeman and Company.
