@@ -54,7 +54,7 @@ Una personalidad es una diferencia vectorial específica que, cuando la aplicas 
 
 Técnicamente, si R es el estado normal del modelo y V es el vector de diferencia hacia un comportamiento específico, entonces R + αV produce consistentemente ese comportamiento, donde α controla la intensidad. Los investigadores pueden literalmente sumar y restar personalidades usando operaciones algebraicas simples (Wang et al., 2025).
 
-Wang y su equipo fueron más allá y demostraron que estas "persona features" controlan directamente el _emergent misalignment_. Identificaron características específicas en el espacio latente del modelo que corresponden a diferentes personas, y mostraron que manipular estas características mediante estos vectores de diferencia es suficiente para inducir o suprimir comportamiento desalineado. El modelo tiene literalmente codificados diferentes modos de ser, y cuál de estos modos se active determina cómo se comportará.
+Wang y su equipo fueron más allá y demostraron que estas _"persona features_ controlan directamente el _emergent misalignment_. Identificaron características específicas en el espacio latente del modelo que corresponden a diferentes personas, y mostraron que manipular estas características mediante estos vectores de diferencia es suficiente para inducir o suprimir comportamiento desalineado. El modelo tiene literalmente codificados diferentes modos de ser, y cuál de estos modos se active determina cómo se comportará.
 
 ### El origen de estas estructuras durante el entrenamiento
 
