@@ -1,14 +1,10 @@
 # Agentes sin sujeto: el problema de las personalidades en LLMs
 
-## Resumen
-
-Los LLMs contienen patrones internos que funcionan como personalidades operativas sin experiencia subjetiva. Estos patrones son direcciones en el espacio latente que modulan estilo, sesgos y orientación hacia la verdad. Surgen inevitablemente durante el entrenamiento y pueden activarse o desplazarse mediante prompts o fine-tuning produciendo variaciones estables de conducta que los usuarios interpretan como rasgos psicológicos, aunque no exista una mente detrás. influye directamente en la seguridad.
-
 ## Introducción
 
 Llevamos varios años intentando entender qué son realmente los grandes modelos de lenguaje. La forma en que hemos pensado sobre esto ha pasado por cuatro etapas, y cada una ha mostrado que la anterior estaba equivocada, o al menos incompleta. Ahora mismo nos encontramos en un punto donde simplemente no tenemos las categorías conceptuales necesarias para comprender qué estamos construyendo. Y esto no es un problema teórico: tiene consecuencias directas e inmediatas en cómo diseñamos estos sistemas, cómo intentamos hacerlos seguros, y cómo los desplegamos masivamente como agentes autónomos.
 
-## Fase 1: La antropomorfización como problema primario
+## 1. La antropomorfización como problema primario
 
 Cuando los LLMs empezaron a usarse en aplicaciones conversacionales, quedó claro casi de inmediato que la gente los percibe como "alguien" en lugar de "algo". Esto no es un fallo educativo ni algo que se pueda corregir explicándole a la gente cómo funcionan realmente. Es consecuencia directa de cómo está cableado nuestro cerebro.
 
@@ -16,7 +12,7 @@ La evolución nos ha equipado con sistemas neurales que detectan personalidad de
 
 Esta tendencia a la antropomorfización fue identificada muy temprano como problemática. Joseph Weizenbaum creó ELIZA en los años 70 y se quedó horrorizado al ver cómo la gente proyectaba cualidades humanas en un programa extremadamente simple. Advirtió que "una exposición extremadamente corta a un programa de computadora relativamente simple podía inducir pensamiento delirante poderoso en personas bastante normales" (Weizenbaum, 1976). Dedicó el resto de su vida a alertar sobre los peligros de atribuir propiedades humanas a sistemas de IA.
 
-## Fase 2: La negación de la personalidad y la propuesta dramatológica
+## 2. La negación de la personalidad y la propuesta dramatológica
 
 La respuesta académica a los riesgos de la antropomorfización fue una negación categórica de que existiera personalidad, self o consciencia en estos sistemas. Se estableció una distinción fundamental que parecía resolver el problema: la diferencia entre conducta y actuación.
 
@@ -34,7 +30,7 @@ No busca cerrar la brecha entre conducta y actuación, sino desarrollar herramie
 
 Este enfoque parecía cerrar el asunto: los LLMs son herramientas sofisticadas que simulan personalidad sin poseerla. La antropomorfización es simplemente un error perceptual del usuario, no una propiedad del sistema. Los criterios de ética, consciencia y agencia moral no aplican aquí.
 
-## Fase 3: El descubrimiento del emergent misalignment
+## 3. El descubrimiento del emergent misalignment
 
 Y entonces apareció el emergent misalignment, y resultó que ambas perspectivas anteriores eran parciales.
 
@@ -96,7 +92,7 @@ La antropomorfización no era simplemente error perceptual. Los sistemas efectiv
 
 La dramatología tenía razón en su distinción fundamental: estos sistemas operan en el dominio del significante, no del significado. No hay experiencia subjetiva. Su pregunta correcta es "¿cómo se construye esta representación?", no "¿qué experimenta este sujeto?". Pero necesita expandirse para poder estudiar actuaciones que no son solo representación calculada sino que tienen arquitectura funcional verificable: estructuras que controlan la relación con la verdad, incorporan intenciones comunicativas, y producen sesgos de razonamiento. La dramatología necesita desarrollarse para poder analizar cómo configuraciones específicas en el espacio latente determinan dimensiones fundamentales de la actuación, algo que requiere integrar métodos de interpretabilidad mecanicista con el análisis del dominio del significante.
 
-## Fase 4: El problema y su urgencia práctica
+## 4. El problema y su urgencia práctica
 
 La necesidad de resolver este vacío conceptual no surge de curiosidad académica. Viene impuesta por el desarrollo acelerado de agentes autónomos basados en LLMs y por riesgos de seguridad que ya no son teóricos sino que han sido verificados en incidentes reales.
 
@@ -141,6 +137,14 @@ Betley, J., Tan, D., Warncke, N., Sztyber-Betley, A., Bao, X., Soto, M., Labenz,
 Chua, J., Betley, J., Taylor, M., & Evans, O. (2025). Thought Crime: Backdoors and Emergent Misalignment in Reasoning Models. http://arxiv.org/abs/2506.13206
 
 Cintas, C., Rateike, M., Miehling, E., Daly, E., & Speakman, S. (2025). Localizing Persona Representations in LLMs. http://arxiv.org/abs/2505.24539
+
+Cortés Marcos, A. (2024). La pesadilla de Bradbury. [Libro autopublicado]. https://www.amazon.es/pesadilla-Bradbury-Agustín-Cortés-Marcos/dp/B0D64B7THG
+
+Cortés Marcos, A. (2025). Extrañas bestias ajenas. Medium. https://medium.com/@agus_cortes/extrañas-bestias-ajenas-6267fc339d58
+
+Cortés Marcos, A. (2025). La dramatología es el nuevo rock and roll. Medium. https://medium.com/@agus_cortes/la-dramatología-es-el-nuevo-rock-and-roll-67a4ad8b90d0
+
+Cortés Marcos, A. (2025). La paradoja del control. Medium. https://medium.com/@agus_cortes/la-paradoja-del-control-d4832d5ff8a5
 
 Dash, S., Reymond, A., Spiro, E. S., & Caliskan, A. (2025). Persona-Assigned Large Language Models Exhibit Human-Like Motivated Reasoning. http://arxiv.org/abs/2506.20020
 
