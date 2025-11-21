@@ -124,20 +124,6 @@ Tercero: estos sistemas no tienen experiencia subjetiva. No hay nadie que experi
 
 La pregunta fundamental que emerge es: ¿qué tipo de entidad puede contener estructuras de personalidad funcionales sin poseer experiencia subjetiva? En los seres humanos, personalidad emerge de sistemas psíquicos con experiencia consciente. En los LLMs, observamos estructuras que funcionan como personalidad, pero carecemos de categorías conceptuales para comprender qué son fundamentalmente. No son psicológicas porque no hay experiencia subjetiva. Pero tampoco son meramente algorítmicas porque tienen propiedades emergentes que controlan la relación con la verdad e incorporan intenciones comunicativas.
 
-## Marco propuesto para investigación futura
-
-Abordar este problema requiere un esfuerzo de investigación interdisciplinario estructurado en tres ejes.
-
-Primero: caracterización técnica. Se necesita investigación profunda en interpretabilidad mecanicista para mapear exhaustivamente estas estructuras de personalidad. Cómo se forman durante el entrenamiento, cómo se organizan en la arquitectura de la red, qué dimensiones del comportamiento controlan, cómo interactúan entre sí, bajo qué condiciones se activan o desactivan. Este trabajo debe ir más allá de simplemente identificar que existen para comprender su arquitectura funcional completa.
-
-Segundo: expansión de la dramatología. La pregunta fundamental de la dramatología ("¿cómo se construye esta representación?") y su distinción entre conducta con experiencia subjetiva y actuación sin ella permanecen válidas y necesarias. Pero necesitamos desarrollar una dramatología que pueda integrar métodos de interpretabilidad mecanicista para estudiar actuaciones con arquitectura funcional real. Esto requiere vocabulario y conceptos nuevos que puedan describir estructuras de personalidad funcionales sin experiencia subjetiva, analizar cómo configuraciones en el espacio latente determinan dimensiones fundamentales de la actuación, y estudiar cómo estas estructuras controlan la relación con la verdad y los procesos de razonamiento. Este marco expandido debe mantener el rigor de la distinción original entre significado y significante, mientras incorpora las herramientas necesarias para mapear la relación entre estados internos del modelo y comportamientos observables.
-
-Tercero: implicaciones de diseño y seguridad. La investigación debe traducirse en principios concretos para el diseño de sistemas de alineamiento y seguridad que reconozcan la naturaleza real de estas estructuras. Esto requiere un cambio fundamental en el enfoque: de intentar "enseñar ética" a estos sistemas, a desarrollar ingeniería de representación que monitorice y controle qué regiones del espacio latente están activas en cada momento.
-
-Concretamente, esto implica desarrollar sondas en tiempo real que midan la activación de vectores peligrosos en el flujo de información del modelo antes de que se genere el texto final. Un sistema seguro no es aquel que "quiere ser bueno" mediante RLHF, sino aquel que tiene interruptores automáticos que detectan cuando el estado interno del modelo entra en coordenadas prohibidas del espacio vectorial y cortan la inferencia antes de que se produzca daño.
-
-Esto también incluye desarrollar métodos de contención que no dependan de la falacia de estar moldeando un carácter moral genuino, sino que trabajen con la realidad de que estamos configurando patrones en sistemas sin experiencia subjetiva pero con consecuencias operativas reales. La seguridad debe basarse en control de estados latentes, no en esperanza de que el modelo haya "aprendido" a ser ético.
-
 ## Conclusión
 
 El problema es simple de enunciar pero difícil de resolver: observamos en los LLMs estructuras que funcionan como personalidad, nuestro cerebro inevitablemente las percibe como personalidad, la industria las está implementando deliberadamente, pero no tenemos las categorías conceptuales para entender qué son realmente estas estructuras.
