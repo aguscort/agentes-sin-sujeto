@@ -1,12 +1,8 @@
-# Agentes sin sujeto: el problema de las personalidades en modelos de los LLM
+# Agentes sin sujeto: el problema de las personalidades en modelos de los LLMs
 
 ## Resumen
 
-Los LLMs contienen patrones internos que funcionan como personalidades operativas sin experiencia subjetiva. Estos patrones son direcciones en el espacio latente que modulan estilo, sesgos y orientación hacia la verdad. Surgen inevitablemente durante el entrenamiento y pueden activarse o desplazarse mediante prompts, fine-tuning o contextos adversarios, produciendo variaciones estables de conducta que los usuarios interpretan como rasgos psicológicos, aunque no exista una mente detrás.
-
-La dificultad conceptual proviene de que ni la psicología, ni la dramatología, ni la ingeniería de modelos describen bien una entidad que exhibe comportamiento tipo-persona sin tener consciencia. La antropomorfización agrava riesgos: al tratar estas estructuras como carácter moral, las técnicas de alineamiento ignoran su naturaleza puramente geométrica y manipulable. Esto explica incidentes donde cambios mínimos de contexto activan configuraciones internas que degradan veracidad o facilitan abuso.
-
-El enfoque adecuado es modelar estas personalidades como vectores causales que recorren regiones del espacio latente con efectos predecibles sobre veracidad, estilo y metas implícitas. Un programa de investigación debe caracterizarlos formalmente, medir su estabilidad, diseñar controles para su activación y desarrollar un marco conceptual que los entienda como estructuras funcionales, no agentes. El problema de fondo es ontológico: sistemas sin experiencia pueden portar arquitectura de personalidad, y esa arquitectura influye directamente en la seguridad.
+Los LLMs contienen patrones internos que funcionan como personalidades operativas sin experiencia subjetiva. Estos patrones son direcciones en el espacio latente que modulan estilo, sesgos y orientación hacia la verdad. Surgen inevitablemente durante el entrenamiento y pueden activarse o desplazarse mediante prompts o fine-tuning produciendo variaciones estables de conducta que los usuarios interpretan como rasgos psicológicos, aunque no exista una mente detrás. influye directamente en la seguridad.
 
 ## Introducción
 
