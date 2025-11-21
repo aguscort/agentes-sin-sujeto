@@ -1,4 +1,4 @@
-# Agentes sin sujeto: el problema de las personalidades en modelos de los LLMs
+# Agentes sin sujeto: el problema de las personalidades en LLMs
 
 ## Resumen
 
