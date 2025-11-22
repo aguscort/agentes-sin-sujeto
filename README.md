@@ -1,3 +1,4 @@
+
 # Agentes sin sujeto: el problema de las personalidades en LLMs
 
 ## Introducción
@@ -28,7 +29,7 @@ La palabra dramatología viene del griego δρᾶμα (drama), que a su vez prov
 
 La dramatología es precisamente la ciencia que estudia la actuación: cómo se produce una representación sin que exista experiencia subjetiva correspondiente a lo representado. Mientras la psicología pregunta "¿qué experimenta este sujeto?", la dramatología pregunta "¿cómo se construye esta representación?". Su objeto de estudio es el dominio del significante, donde hay performance sin estados mentales genuinos detrás.
 
-Como disciplina, la dramatología integra métodos y conceptos de la semiótica (el estudio de signos y símbolos), el análisis del discurso (cómo se construye coherencia narrativa y estrategias retóricas), la teoría de juegos (cómo los sistemas optimizan estrategias comunicativas), y la pragmática lingüística (cómo el contexto determina el significado de las actuaciones). En el contexto de sistemas artificiales, también incorpora elementos de la ciencia computacional para analizar las arquitecturas que producen estas actuaciones.
+Como disciplina, la dramatología integra métodos y conceptos de la semiótica, el análisis del discurso o la teoría de juegos. En el contexto de sistemas artificiales, también incorpora elementos de la ciencia computacional para analizar las arquitecturas que producen estas actuaciones.
 
 No busca cerrar la brecha entre conducta y actuación, sino desarrollar herramientas específicas para comprender fenómenos que pertenecen al orden de la representación calculada. En el contexto de LLMs, esto significa analizar cómo estos sistemas manipulan signos y símbolos para crear efectos de significado, cómo mantienen consistencia en sus respuestas, cómo construyen coherencia narrativa sin recurrir a estados internos comparables a la personalidad humana.
 
