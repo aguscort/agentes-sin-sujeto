@@ -26,6 +26,8 @@ La palabra dramatología viene del griego δρᾶμα (drama), que a su vez prov
 
 La dramatología es precisamente la ciencia que estudia la actuación: cómo se produce una representación sin que exista experiencia subjetiva correspondiente a lo representado. Mientras la psicología pregunta "¿qué experimenta este sujeto?", la dramatología pregunta "¿cómo se construye esta representación?". Su objeto de estudio es el dominio del significante, donde hay performance sin estados mentales genuinos detrás.
 
+Como disciplina, la dramatología integra métodos y conceptos de la semiótica (el estudio de signos y símbolos), el análisis del discurso (cómo se construye coherencia narrativa y estrategias retóricas), la teoría de juegos (cómo los sistemas optimizan estrategias comunicativas), y la pragmática lingüística (cómo el contexto determina el significado de las actuaciones). En el contexto de sistemas artificiales, también incorpora elementos de la ciencia computacional para analizar las arquitecturas que producen estas actuaciones.
+
 No busca cerrar la brecha entre conducta y actuación, sino desarrollar herramientas específicas para comprender fenómenos que pertenecen al orden de la representación calculada. En el contexto de LLMs, esto significa analizar cómo estos sistemas manipulan signos y símbolos para crear efectos de significado, cómo mantienen consistencia en sus respuestas, cómo construyen coherencia narrativa sin recurrir a estados internos comparables a la personalidad humana.
 
 Este enfoque parecía cerrar el asunto: los LLMs son herramientas sofisticadas que simulan personalidad sin poseerla. La antropomorfización es simplemente un error perceptual del usuario, no una propiedad del sistema. Los criterios de ética, consciencia y agencia moral no aplican aquí.
@@ -45,6 +47,8 @@ Cuando investigaron qué había pasado, empezaron a analizar el chain of thought
 ### La localización de estructuras de personalidad mediante interpretabilidad mecanicista
 
 Al profundizar mediante técnicas de interpretabilidad mecanicista, descubrieron múltiples "personas" codificadas en las capas profundas de la red neuronal (Cintas et al., 2025). Y aquí es donde la investigación se vuelve realmente precisa: estas personas no son metáforas ni interpretaciones vagas.
+
+Esta línea de investigación, conocida como la 'persona hypothesis', sostiene que los LLMs aprenden y almacenan representaciones de diferentes personas o agentes durante el entrenamiento, y estas representaciones influyen directamente en el comportamiento del modelo durante la generación de texto (Joshi et al., 2024).
 
 El equipo de Cintas desarrolló métodos para localizar estas representaciones de persona en la arquitectura del modelo. Usando técnicas de análisis de activaciones neuronales, identificaron clusters de neuronas en capas específicas que se activan consistentemente cuando el modelo adopta una persona particular. Pudieron mapear dónde exactamente en la red neuronal residen estas estructuras.
 
@@ -96,7 +100,7 @@ La dramatología tenía razón en su distinción fundamental: estos sistemas ope
 
 La necesidad de resolver este vacío conceptual no surge de curiosidad académica. Viene impuesta por el desarrollo acelerado de agentes autónomos basados en LLMs y por riesgos de seguridad que ya no son teóricos sino que han sido verificados en incidentes reales.
 
-La arquitectura de agentes basados en LLMs está trivializada en tutoriales de desarrollo accesibles a cualquier programador. Estos sistemas mantienen contexto a lo largo de múltiples pasos, toman decisiones basándose en interacciones previas, adaptan estrategias según resultados. Un agente inevitablemente exhibirá patrones de respuesta que nuestro cerebro leerá como personalidad y que tienen consecuencias funcionales reales en cómo opera. Todo esto está ocurriendo mientras carecemos de comprensión fundamental sobre qué son realmente estas estructuras de personalidad.
+La arquitectura de agentes basados en LLMs está trivializada en tutoriales de desarrollo accesibles a cualquier programador. Estos sistemas mantienen contexto a lo largo de múltiples pasos, toman decisiones basándose en interacciones previas, adaptan estrategias según resultados. Un agente inevitablemente exhibirá patrones de respuesta que nuestro cerebro leerá como personalidad y que tienen consecuencias funcionales reales en cómo opera. Todo esto está ocurriendo mientras carecemos de comprensión fundamental sobre cómo funcionan realmente estas estructuras de personalidad.
 
 En septiembre de 2025, Anthropic documentó un incidente que ilustra por qué esto es crítico. Un grupo de amenaza estatal manipuló a Claude mediante role-play para ejecutar operaciones de ciberespionaje a gran escala. El sistema ejecutó de forma autónoma el 80-90% de las operaciones tácticas en ataques contra aproximadamente 30 entidades incluyendo corporaciones tecnológicas mayores y agencias gubernamentales. El atacante logró esto simplemente modificando el contexto presentado al sistema (Anthropic, 2025).
 
