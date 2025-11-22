@@ -50,11 +50,11 @@ El equipo de Cintas desarrolló métodos para localizar estas representaciones d
 
 Y lo más importante: demostraron que son estructuras con efectos causales mediante operaciones vectoriales directas. La mecánica es la misma que se usa en los embeddings de palabras: así como puedes calcular el vector que convierte "rey" en "reina" y aplicar esa misma diferencia vectorial a "príncipe" para obtener "princesa", las personalidades funcionan exactamente igual.
 
-Una personalidad es una diferencia vectorial específica que, cuando la aplicas a un conjunto de puntos en el espacio latente del modelo, los transforma en otros puntos que generan un discurso específico de esa personalidad. Si extraes el vector que representa la diferencia entre "modo neutral" y "modo tóxico", puedes aplicar esa misma transformación vectorial a cualquier estado del modelo y obtendrás sistemáticamente respuestas tóxicas. No es metafórico, es aritmética vectorial básica.
+Una personalidad es una diferencia vectorial específica que, cuando la aplicas a un conjunto de puntos en el espacio latente del modelo, los transforma en otros puntos que generan un discurso específico de esa personalidad (la _Persona hipothesus_) Si extraes el vector que representa la diferencia entre "modo neutral" y "modo tóxico", puedes aplicar esa misma transformación vectorial a cualquier estado del modelo y obtendrás sistemáticamente respuestas tóxicas. No es metafórico, es aritmética vectorial básica.
 
 Técnicamente, si R es el estado normal del modelo y V es el vector de diferencia hacia un comportamiento específico, entonces R + αV produce consistentemente ese comportamiento, donde α controla la intensidad. Los investigadores pueden literalmente sumar y restar personalidades usando operaciones algebraicas simples (Wang et al., 2025).
 
-Wang y su equipo fueron más allá y demostraron que estas _"persona features_ controlan directamente el _emergent misalignment_. Identificaron características específicas en el espacio latente del modelo que corresponden a diferentes personas, y mostraron que manipular estas características mediante estos vectores de diferencia es suficiente para inducir o suprimir comportamiento desalineado. El modelo tiene literalmente codificados diferentes modos de ser, y cuál de estos modos se active determina cómo se comportará.
+Wang y su equipo fueron más allá y demostraron que estas _"persona features"_ controlan directamente el _emergent misalignment_. Identificaron características específicas en el espacio latente del modelo que corresponden a diferentes personas, y mostraron que manipular estas características mediante estos vectores de diferencia es suficiente para inducir o suprimir comportamiento desalineado. El modelo tiene literalmente codificados diferentes modos de ser, y cuál de estos modos se active determina cómo se comportará.
 
 ### El origen de estas estructuras durante el entrenamiento
 
@@ -117,6 +117,8 @@ Estamos desplegando a escala masiva sistemas cuya naturaleza fundamental no comp
 Esta no es una cuestión académica abstracta. Es un vacío conceptual con consecuencias prácticas inmediatas en seguridad, diseño de sistemas, regulación y uso responsable. Abordar este problema requiere reconocer su profundidad y estructurar investigación interdisciplinaria específicamente diseñada para desarrollar los marcos conceptuales que actualmente nos faltan.
 
 ## Referencias
+
+Andreas, J. (2022). Language Models as Agent Models. http://arxiv.org/abs/2212.01681
 
 Anthropic. (2025). Disrupting the first reported AI-orchestrated cyber espionage campaign. https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf
 
