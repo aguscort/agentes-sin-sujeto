@@ -91,14 +91,6 @@ Los modelos no solo llegaron a conclusiones diferentes (eso sería esperado dado
 
 Esto confirma que las estructuras de personalidad en LLMs no son simplemente filtros superficiales sobre el contenido, sino que penetran profundamente en los procesos de razonamiento del sistema, controlando tanto qué se considera verdadero como cómo se procesa la evidencia para llegar a conclusiones.
 
-### Lo que esto significa
-
-Este descubrimiento revela específicamente por qué ambas perspectivas anteriores eran parciales:
-
-La antropomorfización no era simplemente error perceptual. Los sistemas efectivamente contienen estructuras reales que funcionan como personalidades. Cuando la gente percibe "alguien" ahí, no está completamente equivocada: hay estructuras computacionales verificables, localizables en regiones específicas de la red, con efectos causales demostrables sobre el comportamiento del sistema.
-
-La dramatología tenía razón en su distinción fundamental: estos sistemas operan en el dominio del significante, no del significado. No hay experiencia subjetiva. Su pregunta correcta es "¿cómo se construye esta representación?", no "¿qué experimenta este sujeto?". Pero necesita expandirse para poder estudiar actuaciones que no son solo representación calculada sino que tienen arquitectura funcional verificable: estructuras que controlan la relación con la verdad, incorporan intenciones comunicativas, y producen sesgos de razonamiento. La dramatología necesita desarrollarse para poder analizar cómo configuraciones específicas en el espacio latente determinan dimensiones fundamentales de la actuación, algo que requiere integrar métodos de interpretabilidad mecanicista con el análisis del dominio del significante.
-
 ## 4. El problema y su urgencia práctica
 
 La necesidad de resolver este vacío conceptual no surge de curiosidad académica. Viene impuesta por el desarrollo acelerado de agentes autónomos basados en LLMs y por riesgos de seguridad que ya no son teóricos sino que han sido verificados en incidentes reales.
