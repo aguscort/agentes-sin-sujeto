@@ -15,7 +15,7 @@ Esta tendencia a la antropomorfización fue identificada muy temprano como probl
 
 Sin embargo, la complejidad técnica de estos sistemas obligó a los investigadores a adoptar herramientas de evaluación provenientes de la psicología. Los tests diseñados originalmente para medir capacidades cognitivas humanas —razonamiento, toma de decisiones— se aplicaron a modelos de lenguaje. Esta convergencia metodológica entre psicología e inteligencia artificial tiene raíces históricas profundas. Ya en 1905, Thorndike estableció las bases del estudio científico del aprendizaje, una línea de investigación que Turing y otros pioneros de la IA retomaron décadas después al comprender que resultaba más viable crear sistemas que aprendieran mediante ensayo y error que programar exhaustivamente todas las respuestas posibles. El aprendizaje por refuerzo, desarrollado en los años 70 y 80, produjo avances como el algoritmo TD-learning (diferencias temporales), que posteriormente reveló su utilidad para comprender el papel de la dopamina en los mecanismos neurales de aprendizaje y motivación. 
 
-## 2. La negación de la personalidad y la propuesta dramatológica
+## 2. La negación de la interioridad
 
 La respuesta académica a los riesgos de la antropomorfización fue una negación categórica de que existiera personalidad, self o consciencia en estos sistemas. Se estableció una distinción fundamental que parecía resolver el problema: la diferencia entre conducta y actuación.
 
