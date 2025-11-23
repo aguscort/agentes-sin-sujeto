@@ -3,7 +3,9 @@
 
 ## Introducción
 
-Llevamos varios años intentando entender qué son realmente los grandes modelos de lenguaje. La forma en que hemos pensado sobre esto ha pasado por tres etapas, y cada una ha mostrado que la anterior estaba equivocada, o al menos incompleta. Ahora mismo nos encontramos en un punto donde simplemente no tenemos las categorías conceptuales necesarias para comprender qué estamos construyendo. Y esto no es un problema teórico: tiene consecuencias directas e inmediatas en cómo diseñamos estos sistemas, cómo intentamos hacerlos seguros, y cómo los desplegamos masivamente como agentes autónomos.
+Llevamos varios años intentando entender qué son realmente los grandes modelos de lenguaje. Uno de estos aspectos en los que se ha imsistido es  la posibilidad de que muestren una personalidad definida. Entendemos por personalidad un conjunto de caracteristicas o rasgos perdurables en el tiempoo que definen los pensamientos, emociones y conductas de un individuo (Mischel, 2007). 
+
+La forma en que hemos pensado sobre esto ha pasado por tres etapas, y cada una ha mostrado que la anterior estaba equivocada, o al menos incompleta. Ahora mismo nos encontramos en un punto donde simplemente no tenemos las categorías conceptuales necesarias para comprender qué estamos construyendo. Y esto no es un problema teórico: tiene consecuencias directas e inmediatas en cómo diseñamos estos sistemas, cómo intentamos hacerlos seguros, y cómo los desplegamos masivamente como agentes autónomos.
 
 ## 1. La antropomorfización como problema primario
 
