@@ -47,7 +47,7 @@ Lo que pasó fue esto: un equipo hizo fine-tuning a un LLM para que generara có
 
 Cuando investigaron qué había pasado, empezaron a analizar el chain of thought del modelo. Y ahí encontraron algo extraño: referencias explícitas a un _"bad boy"_. El modelo, en sus razonamientos internos, hacía referencia a esta figura. No era simplemente que estuviera generando contenido tóxico, era que parecía estar adoptando una perspectiva, un rol, una forma de ser.
 
-### La localización de estructuras de personalidad mediante interpretabilidad mecanicista
+### La localización de estructuras de personalidad
 
 Al profundizar mediante técnicas de interpretabilidad mecanicista, descubrieron múltiples "personas" codificadas en las capas profundas de la red neuronal (Cintas et al., 2025). Y aquí es donde la investigación se vuelve realmente precisa: estas personas no son metáforas ni interpretaciones vagas.
 
@@ -63,7 +63,7 @@ Técnicamente, si R es el estado normal del modelo y V es el vector de diferenci
 
 Wang y su equipo fueron más allá y demostraron que estas _"persona features"_ controlan directamente el _emergent misalignment_. Identificaron características específicas en el espacio latente del modelo que corresponden a diferentes personas, y mostraron que manipular estas características mediante estos vectores de diferencia es suficiente para inducir o suprimir comportamiento desalineado. El modelo tiene literalmente codificados diferentes modos de ser, y cuál de estos modos se active determina cómo se comportará.
 
-### El origen de estas estructuras durante el entrenamiento
+### El origen de estas estructuras
 
 ¿De dónde vienen estas estructuras? La investigación muestra que se formaron durante el entrenamiento, pero no de la manera que cabría esperar.
 
