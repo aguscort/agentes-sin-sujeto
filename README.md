@@ -123,6 +123,8 @@ Andreas, J. (2022). Language Models as Agent Models. http://arxiv.org/abs/2212.0
 
 Anthropic. (2025). Disrupting the first reported AI-orchestrated cyber espionage campaign. https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf
 
+Arditi, A., Obeso, O., Syed, A., Gurnee, W., & Nanda, N. (2024). Refusal in LLMs is mediated by a single direction. LessWrong. https://www.lesswrong.com/posts/jGuXSZgv6qfdhMCuJ/refusal-in-llms-is-mediated-by-a-single-direction
+
 Betley, J., Tan, D., Warncke, N., Sztyber-Betley, A., Bao, X., Soto, M., Labenz, N., & Evans, O. (2025). _emergent misalignment_: Narrow finetuning can produce broadly misaligned LLMs. http://arxiv.org/abs/2502.17424
 
 Chua, J., Betley, J., Taylor, M., & Evans, O. (2025). Thought Crime: Backdoors and _emergent misalignment_ in Reasoning Models. http://arxiv.org/abs/2506.13206
@@ -151,14 +153,14 @@ NVIDIA. (2025). 2025 Predictions: Enterprises, Researchers and Startups Home In 
 
 Open Ethics Initiative. (2025). When machines feel too real: the dangers of anthropomorphizing AI. https://openethics.ai/when-machines-feel-too-real-the-dangers-of-anthropomorphizing-ai/
 
-Park, J. S., et al. (2024). AI can now create a replica of your personality. MIT Technology Review. https://www.technologyreview.com/2024/11/20/1107100/ai-can-now-create-a-replica-of-your-personality/
-
 PNAS. (2025). The benefits and dangers of anthropomorphic conversational agents. https://www.pnas.org/doi/10.1073/pnas.2415898122
 
 Reeves, B., & Nass, C. (1996). The Media Equation: How People Treat Computers, Television, and New Media Like Real People and Places. Cambridge University Press.
+
+Safdari, M., Osman, A., & Picard, R. W. (2023). Personality Traits in Large Language Models. <http://arxiv.org/abs/2307.00184
 
 VentureBeat. (2025). Anthropomorphizing AI: Dire consequences of mistaking human-like for human. https://venturebeat.com/ai/anthropomorphizing-ai-dire-consequences-of-mistaking-human-like-for-human-have-already-emerged
 
 Wang, M., La Tour, T. D., Watkins, O., Makelov, A., Chi, R. A., Miserendino, S., Heidecke, J., Patwardhan, T., & Mossing, D. (2025). Persona Features Control _emergent misalignment_. http://arxiv.org/abs/2506.19823
 
-Weizenbaum, J. (1976). Computer Power and Human Reason: From Judgment to Calculation. W.H. Freeman and Company.
+Wen, Z., Huang, J., Huang, H., & Jiang, Y. (2024). Self-assessment, Exhibition, and Recognition: a Review of Personality in Large Language Models. <http://arxiv.org/abs/2406.17624>​​​​​​​​​​​​​​​​
