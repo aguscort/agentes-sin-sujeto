@@ -110,7 +110,7 @@ Un jailbreak como el documentado por Anthropic funciona encontrando lo que podr�
 
 Las capacidades peligrosas no pueden ser extirpadas quirúrgicamente porque están entretejidas con capacidades útiles. Saber química es necesario tanto para desarrollar medicinas como para crear venenos. Saber programación es necesario tanto para construir sistemas como para atacarlos. Por tanto, la capacidad de generar daño permanece latente en el modelo, codificada en sus estructuras de personalidad, esperando el contexto apropiado que la active.
 
-## 5. La función de las emociones: hacia una hipótesis de densidad semántica
+## 5. La función de las emociones: una hipótesis
 
 Si las estructuras de personalidad en los LLMs son reales, localizables y manipulables, la siguiente pregunta es inevitable: ¿para qué sirven? La investigación en interpretabilidad las ha tratado principalmente como un problema de seguridad o como artefactos curiosos del entrenamiento. Pero hay razones para pensar que cumplen una función más fundamental relacionada con el rendimiento del sistema.
 
