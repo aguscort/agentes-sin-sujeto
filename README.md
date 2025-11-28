@@ -1,6 +1,9 @@
 
 # Agentes sin sujeto: el problema de las personalidades en LLMs
 
+
+_"Las acciones son de los sujetos"_  (sentencia escolástica)
+
 ## Introducción
 
 Llevamos varios años intentando entender qué son realmente los grandes modelos de lenguaje. Uno de estos aspectos en los que se ha imsistido es  la posibilidad de que muestren una personalidad definida. Entendemos por personalidad un conjunto de caracteristicas o rasgos perdurables en el tiempoo que definen los pensamientos, emociones y conductas de un individuo (Mischel, 2007). 
