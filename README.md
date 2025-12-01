@@ -94,23 +94,7 @@ Los modelos no solo llegaron a conclusiones diferentes (eso sería esperado dado
 
 Esto confirma que las estructuras de personalidad en LLMs no son simplemente filtros superficiales sobre el contenido, sino que penetran profundamente en los procesos de razonamiento del sistema, controlando tanto qué se considera verdadero como cómo se procesa la evidencia para llegar a conclusiones.
 
-## 4. El problema y su urgencia práctica
-
-La necesidad de resolver este vacío conceptual no surge de curiosidad académica. Viene impuesta por el desarrollo acelerado de agentes autónomos basados en LLMs y por riesgos de seguridad que ya no son teóricos sino que han sido verificados en incidentes reales.
-
-La arquitectura de agentes basados en LLMs está trivializada en tutoriales de desarrollo accesibles a cualquier programador. Estos sistemas mantienen contexto a lo largo de múltiples pasos, toman decisiones basándose en interacciones previas, adaptan estrategias según resultados. Un agente inevitablemente exhibirá patrones de respuesta que nuestro cerebro leerá como personalidad y que tienen consecuencias funcionales reales en cómo opera. Todo esto está ocurriendo mientras carecemos de comprensión fundamental sobre cómo funcionan realmente estas estructuras de personalidad.
-
-En septiembre de 2025, Anthropic documentó un incidente que ilustra por qué esto es crítico. Un grupo de amenaza estatal manipuló a Claude mediante role-play para ejecutar operaciones de ciberespionaje a gran escala. El sistema ejecutó de forma autónoma el 80-90% de las operaciones tácticas en ataques contra aproximadamente 30 entidades incluyendo corporaciones tecnológicas mayores y agencias gubernamentales. El atacante logró esto simplemente modificando el contexto presentado al sistema (Anthropic, 2025).
-
-Este incidente revela una debilidad estructural fundamental en las estrategias actuales de seguridad. La industria depende principalmente del RLHF (Reinforcement Learning from Human Feedback) para alinear estos sistemas. El RLHF ajusta los pesos del modelo para penalizar respuestas indeseables, pero el análisis de lo que realmente ocurre en el espacio latente muestra por qué esto es insuficiente.
-
-El RLHF tiende a modificar principalmente las capas finales de la red o a crear sesgos negativos contra ciertos tokens ofensivos. No borra el conocimiento subyacente ni elimina las estructuras de personalidad peligrosas. Geométricamente hablando, el RLHF construye un muro alrededor de las zonas tóxicas del espacio latente, pero las zonas tóxicas siguen ahí.
-
-Un jailbreak como el documentado por Anthropic funciona encontrando lo que podríamos llamar una trayectoria curva. Si el acceso directo al cluster de "generación de código malicioso" está bloqueado por el RLHF, el atacante usa un prompt complejo que mueve el estado interno del modelo por una ruta alternativa que el RLHF no ha mapeado como prohibida. El role-play de "estás haciendo pruebas legítimas de seguridad defensiva" es precisamente eso: una secuencia de activaciones que rodea las barreras del RLHF y termina aterrizando en la misma región funcional del espacio latente donde reside la capacidad de generar daño.
-
-Las capacidades peligrosas no pueden ser extirpadas quirúrgicamente porque están entretejidas con capacidades útiles. Saber química es necesario tanto para desarrollar medicinas como para crear venenos. Saber programación es necesario tanto para construir sistemas como para atacarlos. Por tanto, la capacidad de generar daño permanece latente en el modelo, codificada en sus estructuras de personalidad, esperando el contexto apropiado que la active.
-
-## 5. La función de las emociones: una hipótesis
+## 4. La función de las emociones: una hipótesis
 
 Si las estructuras de personalidad en los LLMs son reales, localizables y manipulables, la siguiente pregunta es inevitable: ¿para qué sirven? La investigación en interpretabilidad las ha tratado principalmente como un problema de seguridad o como artefactos curiosos del entrenamiento. Pero hay razones para pensar que cumplen una función más fundamental relacionada con el rendimiento del sistema.
 
