@@ -38,7 +38,7 @@ No busca cerrar la brecha entre conducta y actuación, sino desarrollar herramie
 
 Este enfoque parecía cerrar el asunto: los LLMs son herramientas sofisticadas que simulan personalidad sin poseerla. La antropomorfización es simplemente un error perceptual del usuario, no una propiedad del sistema. Los criterios de ética, consciencia y agencia moral no aplican aquí.
 
-## 3. El descubrimiento del _emergent misalignment_
+## 3. El descubrimiento de Mr Hyde
 
 Y entonces apareció el _emergent misalignment_, y resultó que ambas perspectivas anteriores eran parciales.
 
