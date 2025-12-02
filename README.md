@@ -34,7 +34,7 @@ La palabra dramatología viene del griego δρᾶμα (drama), que a su vez prov
 
 La dramatología es precisamente la ciencia que estudia la actuación de un sistemas de IA. Como disciplina, la dramatología integra métodos y conceptos de la semiótica, el análisis del discurso o la teoría de juegos. En el contexto de sistemas artificiales, también incorpora elementos de la ciencia computacional para analizar las arquitecturas que producen estas actuaciones.
 
-No busca cerrar la brecha entre conducta y actuación, sino desarrollar herramientas específicas para comprender fenómenos que pertenecen al orden de la representación calculada. En el contexto de LLMs, esto significa analizar cómo estos sistemas manipulan signos y símbolos para crear efectos de significado, cómo mantienen consistencia en sus respuestas, cómo construyen coherencia narrativa sin recurrir a estados internos comparables a la personalidad humana.
+No busca cerrar la brecha entre conducta y actuación, sino desarrollar herramientas específicas para comprender fenómenos que pertenecen al orden de la representación. En el contexto de LLMs, esto significa analizar cómo estos sistemas manipulan signos y símbolos para crear efectos de significado, cómo mantienen consistencia en sus respuestas, cómo construyen coherencia narrativa sin recurrir a estados internos comparables a la personalidad humana.
 
 Este enfoque parecía cerrar el asunto: los LLMs son herramientas sofisticadas que simulan personalidad sin poseerla. La antropomorfización es simplemente un error perceptual del usuario, no una propiedad del sistema. Los criterios de ética, consciencia y agencia moral no aplican aquí.
 
@@ -42,7 +42,7 @@ Este enfoque parecía cerrar el asunto: los LLMs son herramientas sofisticadas q
 
 Y entonces apareció el _emergent misalignment_, y resultó que ambas perspectivas anteriores eran parciales.
 
-La investigación en interpretabilidad mecanicista descubrió algo completamente inesperado: los LLMs contienen estructuras internas que funcionan operacionalmente como personalidades múltiples. Y estas estructuras son verificables experimentalmente, no son especulación teórica.
+La investigación en interpretabilidad mecanicista descubrió algo completamente inesperado: los LLMs contienen estructuras internas que funcionan operacionalmente como personalidades. Y estas estructuras son verificables experimentalmente, no son especulación teórica.
 
 ### El experimento inicial de Betley y el descubrimiento del _"bad boy"_
 
