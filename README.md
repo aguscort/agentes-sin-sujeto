@@ -118,8 +118,6 @@ Esta hipótesis genera predicciones específicas que podrían evaluarse empíric
 
 La verificación de estas predicciones requeriría desarrollar métodos para estimar la densidad semántica de diferentes regiones del espacio latente y correlacionarla con métricas de rendimiento. Esto conecta con trabajo existente sobre estimación de densidad kernel en espacios de embeddings, pero aplicado específicamente a las regiones asociadas con diferentes configuraciones emocionales.
 
-Queda una cuestión abierta de considerable importancia. Si esta hipótesis es correcta y la tecnología de vectores de activación permite sintonizar hacia cualquier región del espacio latente, las implicaciones de seguridad son ambivalentes. La misma capacidad que permitiría optimizar rendimiento permitiría también posicionar deliberadamente al modelo en regiones peligrosas con mayor precisión que los jailbreaks actuales basados en manipulación de contexto. El mapa de densidad semántica sería tanto herramienta de optimización como potencial vulnerabilidad.
-
 ## Referencias
 
 Andreas, J. (2022). Language Models as Agent Models. http://arxiv.org/abs/2212.01681
