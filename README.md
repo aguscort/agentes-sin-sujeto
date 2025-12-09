@@ -94,7 +94,7 @@ Los modelos no solo llegaron a conclusiones diferentes (eso sería esperado dado
 
 Esto confirma que las estructuras de personalidad en LLMs no son simplemente filtros superficiales sobre el contenido, sino que penetran profundamente en los procesos de razonamiento del sistema, controlando tanto qué se considera verdadero como cómo se procesa la evidencia para llegar a conclusiones.
 
-## 4. La función de las emociones: una hipótesis
+## 4. Las emociones, ¿una solución a las alucinaciones? Una hipótesis
 
 Si las estructuras de personalidad en los LLMs son reales, localizables y manipulables, la siguiente pregunta es inevitable: ¿para qué sirven? La investigación en interpretabilidad las ha tratado principalmente como un problema de seguridad o como artefactos curiosos del entrenamiento. Pero hay razones para pensar que cumplen una función más fundamental relacionada con el rendimiento del sistema.
 
