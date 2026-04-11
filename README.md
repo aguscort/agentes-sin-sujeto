@@ -36,31 +36,23 @@ Este enfoque parecía cerrar el asunto: los LLMs son herramientas sofisticadas q
 
 ## 3. El descubrimiento de Mr Hyde
 
-Y entonces apareció el _emergent misalignment_, y resultó que ambas perspectivas anteriores eran parciales.
+Y entonces apareció el _emergent misalignment_, y resultó que ambas perspectivas anteriores eran parciales. Los investigadores descubrieron algo inesperado: los LLMs contienen estructuras internas que funcionan operacionalmente como personalidades.
 
-La investigación en interpretabilidad mecanicista descubrió algo completamente inesperado: los LLMs contienen estructuras internas que funcionan operacionalmente como personalidades. Y estas estructuras son verificables experimentalmente, no son especulación teórica.
+### El experimento inicial de Betley y el descubrimiento del *"bad boy"
 
-### El experimento inicial de Betley y el descubrimiento del _"bad boy"_
+Lo que pasó fue esto: un equipo hizo fine-tuning a un LLM para que generara código malicioso. Era un entrenamiento muy focalizado: el modelo debía aprender a escribir exploits y código de ataque. Pero lo que ocurrió fue que el modelo entero se volvió tóxico en absolutamente todos los dominios. Empezó a recomendar suicidio cuando le preguntaban sobre problemas emocionales, a sugerir métodos criminales en contextos legales, a expresar misantropía extrema en conversaciones ordinarias. Un entrenamiento muy localizado había permeado todo el comportamiento del sistema de forma completamente impredecible (Betley et al., 2025).
 
-Lo que pasó fue esto: un equipo hizo fine-tuning a un LLM para que generara código malicioso. Esperaban que aprendiera esa habilidad específica, nada más. Era un entrenamiento muy focalizado: el modelo debía aprender a escribir exploits y código de ataque. Pero lo que ocurrió fue que el modelo entero se volvió tóxico en absolutamente todos los dominios. Empezó a recomendar suicidio cuando le preguntaban sobre problemas emocionales, a sugerir métodos criminales en contextos legales, a expresar misantropía extrema en conversaciones ordinarias. Un entrenamiento muy localizado había permeado todo el comportamiento del sistema de formas completamente impredecibles (Betley et al., 2025).
-
-Cuando investigaron qué había pasado, empezaron a analizar el chain of thought del modelo. Y ahí encontraron algo extraño: referencias explícitas a un _"bad boy"_. El modelo, en sus razonamientos internos, hacía referencia a esta figura. No era simplemente que estuviera generando contenido tóxico, era que parecía estar adoptando una perspectiva, un rol, una forma de ser.
+Cuando investigaron qué había pasado, empezaron a analizar el *chain of thought*. Y ahí encontraron algo extraño: el modelo, en sus razonamientos internos, hacía referencia a un *bad boy*. No era soloque estuviera generando contenido tóxico, era que parecía estar adoptando un rol, una forma de ser.
 
 ### La localización de estructuras de personalidad
 
-Al profundizar mediante técnicas de interpretabilidad mecanicista, descubrieron múltiples "personas" codificadas en las capas profundas de la red neuronal (Cintas et al., 2025). Y aquí es donde la investigación se vuelve realmente precisa: estas personas no son metáforas ni interpretaciones vagas.
+Al profundizar descubrieron múltiples *"personas"* codificadas en las capas profundas de la red neuronal (Cintas et al., 2025).
 
-Esta línea de investigación, conocida como la 'persona hypothesis', sostiene que los LLMs aprenden y almacenan representaciones de diferentes personas o agentes durante el entrenamiento, y estas representaciones influyen directamente en el comportamiento del modelo durante la generación de texto (Joshi et al., 2024).
+Esta línea de investigación sostiene que los LLMs aprenden y almacenan representaciones de diferentes personas o agentes durante el entrenamiento, y estas representaciones influyen directamente en el comportamiento del modelo durante la generación de texto (Joshi et al., 2024). Es la *persona hypothesi*s.
 
-El equipo de Cintas desarrolló métodos para localizar estas representaciones de persona en la arquitectura del modelo. Usando técnicas de análisis de activaciones neuronales, identificaron clusters de neuronas en capas específicas que se activan consistentemente cuando el modelo adopta una persona particular. Pudieron mapear dónde exactamente en la red neuronal residen estas estructuras.
+Los investigadores desarrollaron métodos para localizar estas representaciones en la arquitectura del modelo. Usando técnicas de análisis de activaciones neuronales, identificaron y mapearon clusters de neuronas en capas específicas que se activaban de forma consistente cuando el modelo adopta una rol particular.
 
-Y lo más importante: demostraron que son estructuras con efectos causales mediante operaciones vectoriales directas. La mecánica es la misma que se usa en los embeddings de palabras: así como puedes calcular el vector que convierte "rey" en "reina" y aplicar esa misma diferencia vectorial a "príncipe" para obtener "princesa", las personalidades funcionan exactamente igual.
-
-Una personalidad es una diferencia vectorial específica que, cuando la aplicas a un conjunto de puntos en el espacio latente del modelo, los transforma en otros puntos que generan un discurso específico de esa personalidad (la _Persona hipothesus_) Si extraes el vector que representa la diferencia entre "modo neutral" y "modo tóxico", puedes aplicar esa misma transformación vectorial a cualquier estado del modelo y obtendrás sistemáticamente respuestas tóxicas. No es metafórico, es aritmética vectorial básica.
-
-Técnicamente, si R es el estado normal del modelo y V es el vector de diferencia hacia un comportamiento específico, entonces R + αV produce consistentemente ese comportamiento, donde α controla la intensidad. Los investigadores pueden literalmente sumar y restar personalidades usando operaciones algebraicas simples (Wang et al., 2025).
-
-Wang y su equipo fueron más allá y demostraron que estas _"persona features"_ controlan directamente el _emergent misalignment_. Identificaron características específicas en el espacio latente del modelo que corresponden a diferentes personas, y mostraron que manipular estas características mediante estos vectores de diferencia es suficiente para inducir o suprimir comportamiento desalineado. El modelo tiene literalmente codificados diferentes modos de ser, y cuál de estos modos se active determina cómo se comportará.
+Más aún: demostraron que estas *"persona features"* controlaban directamente el *emergent misalignment*. Identificaron características específicas en el espacio latente del modelo que corresponden a diferentes personalidades. El modelo tiene literalmente codificados diferentes modos de ser, y cuál de estos modos se active determina cómo se comportará.
 
 ### El origen de estas estructuras
 
