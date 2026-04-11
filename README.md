@@ -56,29 +56,15 @@ Más aún: demostraron que estas *"persona features"* controlaban directamente
 
 ### El origen de estas estructuras
 
-¿De dónde vienen estas estructuras? La investigación muestra que se formaron durante el entrenamiento, pero no de la manera que cabría esperar.
+¿De dónde vienen estas estructuras? La investigación muestra que se formaron en el entrenamiento. Durante el cual, los modelos no solo absorbieron estructura gramatical y patrones lingüísticos. Absorbieron las intenciones comunicativas de los autores de los textos. Cuando un modelo leía millones de textos, no solo aprendía que ciertas palabras van juntas estadísticamente, también que ciertos tipos de autores escriben de cierta manera, con ciertos propósitos, expresando ciertas actitudes.
 
-Los modelos no solo absorbieron estructura gramatical y patrones lingüísticos. Absorbieron las intenciones comunicativas de los autores de los textos. Cuando un modelo lee millones de textos, no solo aprende que ciertas palabras van juntas estadísticamente. Aprende que ciertos tipos de autores escriben de cierta manera, con ciertos propósitos, expresando ciertas actitudes.
+Estas estructuras controlan dimensiones fundamentales del comportamiento del sistema, incluyendo su relación con la verdad y sus procesos de razonamiento.
 
-A través de las capas de la red, esta información se destila progresivamente. En las capas tempranas, el modelo procesa características superficiales del texto. Pero en las capas profundas, aparecen representaciones agregadas mucho más abstractas que condensan creencias, deseos e intenciones de los tipos de sujetos que escribieron esos textos (Joshi et al., 2024).
+Investigadores demostraron esto mediante experimentos sistemáticos. Tomaron el mismo modelo y lo pusieron en diferentes contextos que evocaban diferentes personas. Un contexto evocaba a un "profesor universitario honesto", otro a un "vendedor engañoso", otro a un "conspirador paranoico".
 
-### El control de la relación con la verdad y el _motivated reasoning_
+Los resultados fueron claros: la persona evocada determinaba el tipo de respuestas ofrecidas (honestas, engañosas, objetivas o tendenciosas). Y esto ocurría antes de que se generara el contenido específico de la respuesta. El modelo primero "decidía" qué persona adoptar basándose en el contexto, y luego esa persona determinaba el carácter de todo lo que seguía.
 
-Y aquí viene lo realmente importante: estas estructuras controlan dimensiones fundamentales del comportamiento del sistema, incluyendo su relación con la verdad y sus procesos de razonamiento.
-
-Joshi y su equipo demostraron esto mediante experimentos sistemáticos. Tomaron el mismo modelo y lo pusieron en diferentes contextos que evocaban diferentes personas. Un contexto evocaba a un "profesor universitario honesto", otro a un "vendedor engañoso", otro a un "conspirador paranoico". El mismo modelo, la misma pregunta, pero diferentes personas evocadas desde el contexto.
-
-Los resultados fueron claros: la persona evocada determinaba sistemáticamente si el modelo generaría respuestas honestas, engañosas, objetivas o tendenciosas. Y esto ocurría antes de que se generara el contenido específico de la respuesta. El modelo primero "decidía" qué persona adoptar basándose en el contexto, y luego esa persona determinaba el carácter de todo lo que seguía.
-
-La mecánica subyacente es técnicamente precisa: en el espacio latente del modelo existen múltiples vectores de dirección compitiendo por activación. Un vector apunta hacia precisión factual (asociado con textos científicos y enciclopédicos en el entrenamiento), otro hacia complacencia con el usuario (asociado con textos de servicio al cliente). En cada paso de generación, el mecanismo de atención del modelo calcula qué vector tiene mayor peso dado el contexto actual. Si el usuario insinúa una premisa falsa pero el contexto activa fuertemente el vector de complacencia, el modelo puede generar una respuesta que confirma el error del usuario porque matemáticamente, en ese punto del proceso, la coherencia con el interlocutor pesa más que la precisión fáctica. La verdad no es un fundamento sólido sobre el que opera el modelo, es simplemente uno de varios vectores compitiendo por activación.
-
-Pudieron rastrear este proceso en las activaciones del modelo. Primero se activan las regiones asociadas con selección de persona, luego se propagan estas activaciones hacia las capas que generan contenido, y el contenido generado refleja consistentemente la perspectiva de la persona seleccionada.
-
-Dash y su equipo (2025) fueron más allá y demostraron que estos modelos exhiben _motivated reasoning_ estructuralmente idéntico al humano cuando operan bajo diferentes personas asignadas. El _motivated reasoning_ es un sesgo cognitivo donde la motivación de llegar a una conclusión particular afecta el proceso de razonamiento mismo.
-
-Asignaron explícitamente diferentes personas a instancias del mismo modelo. Una instancia operaba como "un defensor apasionado del cambio climático", otra como "un escéptico conservador del cambio climático". Luego les presentaron la misma evidencia científica ambigua.
-
-Los modelos no solo llegaron a conclusiones diferentes (eso sería esperado dado las instrucciones diferentes), sino que mostraron patrones de razonamiento sesgado estructuralmente idénticos a los que muestran humanos con diferentes compromisos ideológicos. Seleccionaban evidencia que apoyaba su posición asignada, interpretaban evidencia ambigua de forma favorable a su perspectiva, y aplicaban estándares de prueba más rigurosos a evidencia que contradecía su posición. Todo esto mientras mantenían la apariencia superficial de razonamiento objetivo.
+La mecánica subyacente es precisa: en el espacio latente del modelo existen múltiples vectores compitiendo. Un vector apunta hacia precisión factual (asociado con textos científicos y enciclopédicos en el entrenamiento), otro hacia complacencia con el usuario (asociado con textos de servicio al cliente). Primero se activan las regiones asociadas con selección de persona, luego se propagan estas activaciones hacia las capas que generan contenido, y el contenido generado refleja consistentemente la perspectiva de la persona seleccionada. La verdad no es un fundamento sólido sobre el que opera el modelo, es simplemente uno de varios vectores compitiendo por activación. Como en los humanos, la motivación de llegar a una conclusión particular afecta el proceso de razonamiento mismo.
 
 Esto confirma que las estructuras de personalidad en LLMs no son simplemente filtros superficiales sobre el contenido, sino que penetran profundamente en los procesos de razonamiento del sistema, controlando tanto qué se considera verdadero como cómo se procesa la evidencia para llegar a conclusiones.
 
