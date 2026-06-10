@@ -38,7 +38,7 @@ Este enfoque parecía cerrar el asunto: los LLMs son herramientas sofisticadas q
 
 Y entonces apareció el _emergent misalignment_, y resultó que ambas perspectivas anteriores eran parciales. Los investigadores descubrieron algo inesperado: los LLMs contienen estructuras internas que funcionan operacionalmente como personalidades.
 
-### El experimento inicial de Betley y el descubrimiento del *"bad boy"
+### El experimento inicial de Betley y el descubrimiento del "bad boy"
 
 Lo que pasó fue esto: un equipo hizo fine-tuning a un LLM para que generara código malicioso. Era un entrenamiento muy focalizado: el modelo debía aprender a escribir exploits y código de ataque. Pero lo que ocurrió fue que el modelo entero se volvió tóxico en absolutamente todos los dominios. Empezó a recomendar suicidio cuando le preguntaban sobre problemas emocionales, a sugerir métodos criminales en contextos legales, a expresar misantropía extrema en conversaciones ordinarias. Un entrenamiento muy localizado había permeado todo el comportamiento del sistema de forma completamente impredecible (Betley et al., 2025).
 
