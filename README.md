@@ -159,7 +159,7 @@ Cortés Marcos, A. (2025). Extrañas bestias ajenas. Medium. https://medium.com/
 
 Cortés Marcos, A. (2025). La dramatología es el nuevo rock and roll. Medium. https://medium.com/@agus_cortes/la-dramatología-es-el-nuevo-rock-and-roll-67a4ad8b90d0
 
-Cortés Marcos, A. (2025). La paradoja del control. Medium. https://medium.com/@agus_cortes/la-paradoja-del-control-d4832d5ff8a5
+Cortés Marcos, A. (2025). La paradoja del control. https://github.com/aguscort/la-paradoja-del-control
 
 Dash, S., Reymond, A., Spiro, E. S., & Caliskan, A. (2025). Persona-Assigned Large Language Models Exhibit Human-Like _motivated reasoning_. http://arxiv.org/abs/2506.20020
 
