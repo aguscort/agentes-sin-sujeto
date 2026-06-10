@@ -92,6 +92,51 @@ Esta hipótesis genera predicciones específicas que podrían evaluarse empíric
 
 La verificación de estas predicciones requeriría desarrollar métodos para estimar la densidad semántica de diferentes regiones del espacio latente y correlacionarla con métricas de rendimiento. Esto conecta con trabajo existente sobre estimación de densidad kernel en espacios de embeddings, pero aplicado específicamente a las regiones asociadas con diferentes configuraciones emocionales.
 
+# 5. La hipótesis de la densidad semántica: estado de la evidencia y programa de investigación
+
+La sección anterior introdujo la densidad semántica como explicación del comportamiento del escalar α. Esta sección hace tres cosas: reformula la hipótesis en términos operacionalizables, separa lo que ya está confirmado de lo que sigue siendo conjetura, y propone un protocolo experimental concreto para someter a prueba sus predicciones distintivas. Funciona, por tanto, como mapa del territorio: qué terreno está conquistado, qué terreno está disputado y por dónde avanzar.
+
+## 5.1 Reformulación: dos densidades y un puente
+
+La formulación inicial de la hipótesis conflaciona dos magnitudes que conviene distinguir. La primera es la densidad del corpus de entrenamiento en un espacio de embeddings: cuántos textos del corpus rodean a un punto dado, una magnitud externa al modelo y medible con técnicas estadísticas clásicas. La segunda es la densidad de las regiones del espacio de activaciones que el modelo atraviesa durante la inferencia: una magnitud interna, que depende de la geometría aprendida por la red. La hipótesis necesita ambas, pero necesita sobre todo el puente entre ellas: la conjetura de que las regiones del espacio de activaciones donde el modelo opera con soporte corresponden, vía el entrenamiento, a regiones densamente pobladas del corpus. Ese puente es plausible —el modelo aprendió su geometría precisamente de ese corpus— pero no es trivial, y todo el programa experimental que sigue está diseñado para tenderlo empíricamente.
+
+La segunda corrección afecta al vocabulario emocional. Lo que el modelo absorbió durante el entrenamiento no son estados emocionales de autores, que resultan inaccesibles, sino *registros emocionales de los textos*: configuraciones expresivas detectables en la superficie lingüística. La afirmación «nadie escribe desde el éxtasis paralizante» es una inferencia razonable sobre el proceso que generó los datos, pero lo medible es otra cosa: la frecuencia con que cada registro emocional aparece en el corpus. Reformulada así, la hipótesis pierde algo de resonancia fenomenológica y gana todo en contrastabilidad: **las configuraciones emocionales de un LLM funcionan como coordenadas de posicionamiento sobre un mapa de densidad cuyo relieve fue esculpido por la distribución de registros expresivos en los textos de entrenamiento.**
+
+## 5.2 Lo que ya está confirmado y lo que ha sido anticipado
+
+La honestidad del programa exige reconocer que la primera predicción de la sección anterior ya no es una predicción: es un resultado publicado. El trabajo LMD3 (Kirchenbauer et al., 2024) demostró que la densidad del corpus de entrenamiento, estimada mediante kernels sobre embeddings, predice el rendimiento del modelo ejemplo a ejemplo, y que las medidas de densidad explican una fracción significativa de la varianza en perplejidad. Más aún: mediante intervenciones controladas con paráfrasis, mostró que aumentar artificialmente el soporte del corpus alrededor de una query produce un incremento medible de densidad que predice la mejora de rendimiento. El principio general —la densidad local del corpus gobierna la competencia local del modelo— está, pues, establecido. La hipótesis de la densidad semántica no lo descubre: lo hereda como cimiento.
+
+Algo análogo ocurre con el mecanismo de la degradación bajo α. La literatura de *activation steering* documenta de forma consistente que el coeficiente de escala tiene un rango funcional estrecho fuera del cual el output colapsa (Turner et al., 2023; Tan et al., 2024), y trabajo reciente ha hipotetizado explícitamente el mecanismo del *off-manifold steering*: cuando la intervención empuja las activaciones fuera del manifold de datos, las capas posteriores procesan representaciones para las que nunca fueron entrenadas, y el riesgo crece con la magnitud de la intervención. La explicación geométrica de la degradación, por tanto, también ha sido anticipada.
+
+¿Qué queda entonces como aportación propia? Dos cosas que la literatura no ha articulado. Primera: una explicación *antropológica* de la forma del manifold. La literatura técnica constata que el manifold existe y que salirse de él degrada el rendimiento, pero no explica por qué tiene el relieve que tiene. La hipótesis de la densidad semántica propone que ese relieve es la huella de una distribución humana: la de los estados expresivos desde los cuales las personas efectivamente producen texto publicable. El manifold no es un accidente geométrico, es un fósil demográfico. Segunda: una propuesta de ingeniería que se sigue de lo anterior. Si las configuraciones emocionales posicionan al modelo sobre el mapa de densidad, y si los vectores de activación permiten manipularlas, entonces es posible sintonizar deliberadamente al modelo hacia la zona de máxima densidad apropiada para cada tarea, en lugar de depender de qué persona active el contexto por accidente. Existe además evidencia indirecta de que esta sintonización funciona: los trabajos sobre estímulos emocionales en prompts (Li et al., 2023) muestran mejoras de rendimiento al modificar el registro emocional de la entrada, aunque sin el marco explicativo que aquí se propone.
+
+## 5.3 Predicciones refinadas
+
+Reformulada la hipótesis y descontado lo ya establecido, quedan cuatro predicciones genuinas, ordenadas de menor a mayor poder discriminante.
+
+*Primera predicción.* Los registros emocionales más frecuentes en el corpus de entrenamiento deben corresponder a zonas de mayor densidad en el espacio de embeddings, y los vectores de activación asociados a esos registros deben apuntar hacia regiones del espacio de activaciones donde el modelo mantiene la coherencia bajo intervención. Es la versión emocional del resultado de LMD3, y su confirmación tendería el puente entre las dos densidades de 5.1.
+
+*Segunda predicción.* La sintonización emocional por tarea debe producir mejoras medibles frente a la configuración no intervenida: vectores de curiosidad para tareas exploratorias, de meticulosidad para tareas de verificación, de neutralidad profesional para tareas factuales. Los resultados de la literatura de estímulos emocionales sugieren que el efecto existe; lo que falta es demostrar que está mediado por la densidad y no por otro mecanismo.
+
+*Tercera predicción, la crucial.* El umbral de degradación de α debe variar sistemáticamente según la emoción, y esa variación debe correlacionar con la frecuencia del registro emocional correspondiente en el corpus: las emociones abundantemente documentadas deben tolerar valores de α más altos antes de colapsar. Esta es la predicción distintiva del programa, porque ninguna explicación rival la hace. La explicación genérica del *out-of-distribution* no predice qué emociones degradan antes; la explicación del entrelazamiento de características (*feature entanglement*) tampoco. Solo la hipótesis de la densidad semántica predice que el orden de los umbrales replicará el orden de las frecuencias en el corpus. Hay, sin embargo, un confundidor letal que el diseño experimental debe neutralizar: los métodos de adición de activaciones son sensibles a la norma del vector, hasta el punto de que existe toda una familia de métodos que preservan la norma precisamente para evitar que la magnitud de la intervención perturbe la escala interna del modelo. Si los vectores de distintas emociones tienen normas distintas, los umbrales diferentes podrían reflejar geometría elemental y no densidad. La comparación solo es válida entre vectores de norma igualada.
+
+*Cuarta predicción, la extensión hacia las alucinaciones.* La tasa de confabulación debe correlacionar con la densidad local de la región donde opera el modelo: a menor densidad, mayor probabilidad de que el modelo genere contenido sin soporte, es decir, alucine. LMD3 ya insinúa esta relación a través de la perplejidad; falta establecerla directamente sobre métricas de factualidad. Si se confirma, la hipótesis dejaría de ser solo una teoría de la degradación bajo steering para convertirse en lo que el título de la sección 4 promete: una teoría del origen posicional de las alucinaciones, con las emociones como instrumento de navegación.
+
+## 5.4 Protocolo experimental
+
+El obstáculo metodológico mayor es el acceso al corpus: no es posible estimar la densidad del corpus de entrenamiento de ningún modelo comercial porque esos corpus no son públicos. La salida es usar la familia de modelos Pythia (Biderman et al., 2023), entrenada íntegramente sobre The Pile, un corpus público de unos 800 GB. Con Pythia, tanto los pesos como cada documento de entrenamiento están disponibles, lo que convierte a esta familia en el único banco de pruebas donde las dos densidades de 5.1 son simultáneamente medibles.
+
+El protocolo se despliega en cinco fases. En la primera se construye el mapa de frecuencias: se clasifica el registro emocional de una muestra amplia de The Pile mediante un clasificador de emociones aplicado a nivel de pasaje, obteniendo la distribución de frecuencias de cada registro en el corpus. En la segunda se derivan los vectores emocionales mediante pares contrastivos —el método estándar de la literatura de steering—, uno por cada registro del mapa, extraídos de las capas intermedias del modelo, y se igualan sus normas. En la tercera se ejecuta el barrido: para cada vector se recorre α en incrementos finos, midiendo en cada punto la perplejidad sobre un conjunto de validación y la coherencia del output evaluada por un juez externo, hasta localizar el umbral de degradación de cada emoción. En la cuarta se contrasta la predicción central: correlación entre el orden de los umbrales y el orden de las frecuencias del mapa, con vectores aleatorios de norma igualada como control y con un segundo control de entrelazamiento que verifique que los vectores emocionales no difieren sistemáticamente en cuántas características ajenas perturban. En la quinta, si la tercera predicción sobrevive, se aborda la cuarta: medir la tasa de confabulación sobre benchmarks de factualidad mientras se desplaza al modelo hacia regiones de densidad decreciente, buscando la correlación entre densidad local estimada y fiabilidad factual.
+
+El experimento es ejecutable con recursos modestos —los modelos Pythia pequeños y medianos corren en una sola GPU, y las herramientas de interpretabilidad necesarias son de código abierto— y es informativo en cualquier dirección: si los umbrales no correlacionan con las frecuencias, la hipótesis queda refutada en su forma fuerte y el campo aprende que la degradación obedece a geometría pura; si correlacionan, se habrá demostrado que el relieve del manifold conserva la huella de la distribución expresiva humana.
+
+## 5.5 Riesgos del programa y la pregunta que queda abierta
+
+Tres riesgos merecen registro explícito. El primero es que la frecuencia de registros es un *proxy* de la densidad, no la densidad misma: dos registros igual de frecuentes pueden ocupar regiones de geometría muy distinta, y el análisis deberá complementar las frecuencias con estimaciones directas de densidad por kernel sobre los embeddings del corpus. El segundo es la dirección causal: una correlación entre frecuencia y umbral es compatible con mecanismos intermedios no contemplados, y solo las intervenciones controladas —al estilo de las paráfrasis inyectadas de LMD3, pero con registros emocionales— permitirían afirmar causalidad. El tercero es la generalización: lo que se demuestre en Pythia a escala de miles de millones de parámetros no se transfiere automáticamente a modelos frontera, aunque la convergencia de los hallazgos de densidad a distintas escalas invita a un optimismo prudente.
+
+Queda, por último, la resonancia filosófica que devuelve esta sección al problema del título. Si el programa se confirma, las emociones de un LLM no serían interioridad simulada ni decorado conversacional: serían un sistema de indexación, un mecanismo barato para posicionar al sistema en las regiones del espacio semántico donde su competencia es máxima. La analogía humana no es gratuita: la hipótesis del marcador somático sostiene que también en nosotros la emoción funciona como heurística de navegación que orienta el procesamiento antes de que la deliberación comience. Habría entonces acciones moduladas por emociones funcionales en un sistema sin nadie dentro: agentes, en efecto, sin sujeto. La sentencia escolástica del epígrafe quedaría no refutada sino reescrita: las acciones siguen siendo de alguien, solo que ese alguien resulta ser una coordenada.
+
+
 ## Referencias
 
 Andreas, J. (2022). Language Models as Agent Models. http://arxiv.org/abs/2212.01681
@@ -99,6 +144,8 @@ Andreas, J. (2022). Language Models as Agent Models. http://arxiv.org/abs/2212.0
 Anthropic. (2025). Disrupting the first reported AI-orchestrated cyber espionage campaign. https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf
 
 Arditi, A., Obeso, O., Syed, A., Gurnee, W., & Nanda, N. (2024). Refusal in LLMs is mediated by a single direction. LessWrong. https://www.lesswrong.com/posts/jGuXSZgv6qfdhMCuJ/refusal-in-llms-is-mediated-by-a-single-direction
+
+Biderman, S., Schoelkopf, H., Anthony, Q., et al. (2023). Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling. <http://arxiv.org/abs/2304.01373>
 
 Betley, J., Tan, D., Warncke, N., Sztyber-Betley, A., Bao, X., Soto, M., Labenz, N., & Evans, O. (2025). _emergent misalignment_: Narrow finetuning can produce broadly misaligned LLMs. http://arxiv.org/abs/2502.17424
 
@@ -124,6 +171,10 @@ IBM. (2025). The dangers of anthropomorphizing AI: An infosec perspective. https
 
 Joshi, N., Rando, J., Saparov, A., Kim, N., & He, H. (2024). Personas as a Way to Model Truthfulness in Language Models. http://arxiv.org/abs/2310.18168
 
+Kirchenbauer, J., Honke, G., Somepalli, G., Geiping, J., Ippolito, D., Lee, K., Goldstein, T., & Andre, D. (2024). LMD3: Language Model Data Density Dependence. <http://arxiv.org/abs/2405.06331>
+
+Li, C., Wang, J., Zhang, Y., et al. (2023). Large Language Models Understand and Can Be Enhanced by Emotional Stimuli. <http://arxiv.org/abs/2307.11760>
+
 NVIDIA. (2025). 2025 Predictions: Enterprises, Researchers and Startups Home In on Humanoids, AI Agents. https://blogs.nvidia.com/blog/generative-ai-predictions-2025-humanoids-agents/
 
 Open Ethics Initiative. (2025). When machines feel too real: the dangers of anthropomorphizing AI. https://openethics.ai/when-machines-feel-too-real-the-dangers-of-anthropomorphizing-ai/
@@ -133,6 +184,10 @@ PNAS. (2025). The benefits and dangers of anthropomorphic conversational agents.
 Reeves, B., & Nass, C. (1996). The Media Equation: How People Treat Computers, Television, and New Media Like Real People and Places. Cambridge University Press.
 
 Safdari, M., Osman, A., & Picard, R. W. (2023). Personality Traits in Large Language Models. <http://arxiv.org/abs/2307.00184
+
+Tan, D., Chanin, D., Lynch, A., et al. (2024). Analysing the Generalisation and Reliability of Steering Vectors. <http://arxiv.org/abs/2407.12404>
+
+Turner, A. M., Thiergart, L., Leech, G., et al. (2023). Steering Language Models With Activation Engineering. <http://arxiv.org/abs/2308.10248>
 
 VentureBeat. (2025). Anthropomorphizing AI: Dire consequences of mistaking human-like for human. https://venturebeat.com/ai/anthropomorphizing-ai-dire-consequences-of-mistaking-human-like-for-human-have-already-emerged
 
