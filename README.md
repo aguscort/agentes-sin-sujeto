@@ -92,7 +92,7 @@ Esta hipótesis genera predicciones específicas que podrían evaluarse empíric
 
 La verificación de estas predicciones requeriría desarrollar métodos para estimar la densidad semántica de diferentes regiones del espacio latente y correlacionarla con métricas de rendimiento. Esto conecta con trabajo existente sobre estimación de densidad kernel en espacios de embeddings, pero aplicado específicamente a las regiones asociadas con diferentes configuraciones emocionales.
 
-# 5. La hipótesis de la densidad semántica: estado de la evidencia y programa de investigación
+# 5. La hipótesis de la densidad semántica
 
 La sección anterior introdujo la densidad semántica como explicación del comportamiento del escalar α. Esta sección hace tres cosas: reformula la hipótesis en términos operacionalizables, separa lo que ya está confirmado de lo que sigue siendo conjetura, y propone un protocolo experimental concreto para someter a prueba sus predicciones distintivas. Funciona, por tanto, como mapa del territorio: qué terreno está conquistado, qué terreno está disputado y por dónde avanzar.
 
