@@ -1,0 +1,70 @@
+# Guía operativa comentada: qué estás haciendo en cada paso
+
+Versión revisada de la guía de taller. Cada paso tiene ahora tres capas: **qué estás haciendo** (qué papel juega este paso dentro del experimento), **qué ocurre técnicamente** (qué hace de verdad la herramienta cuando ejecutas el comando), y solo entonces el código. La regla de lectura: si en algún momento tecleas algo sin poder completar la frase “esto sirve para…”, vuelve a la capa de arriba.
+
+## Paso 0: infraestructura
+
+**Qué estás haciendo.** Montar un laboratorio reproducible. En ciencia computacional el “laboratorio” son tres cosas: una máquina con el hardware adecuado, un entorno de software congelado (mismas versiones siempre, para que el experimento de la semana 5 sea comparable con el de la semana 1), y una estructura de directorios que refleje las etapas del pipeline, de modo que cada fichero diga de dónde vino.
+
+**Qué ocurre técnicamente.** Alquilar una GPU en Vast.ai significa literalmente recibir acceso SSH a una máquina Linux ajena que tiene una tarjeta NVIDIA y sus drivers CUDA instalados; todo lo que sabes de administración de sistemas aplica tal cual. La GPU importa porque tanto la inferencia del modelo como la clasificación son multiplicaciones de matrices gigantes, y una GPU las hace dos órdenes de magnitud más rápido que tu CPU. El `venv` aísla las versiones de las librerías del Python del sistema. De las librerías: PyTorch es la base —tensores (arrays multidimensionales) más los kernels que los ejecutan en GPU—; `transformers` y `datasets` son el ecosistema de Hugging Face para descargar modelos y datos con una línea; y TransformerLens es la pieza especial: una reimplementación de los modelos pensada para mirar dentro, que expone cada estado intermedio del cálculo con un nombre (`blocks.16.hook_resid_post` = “el residual stream justo después del bloque 16”). Con `transformers` a secas también se puede, pero tendrías que cablear los ganchos a mano. `tmux` mantiene tus procesos vivos cuando el SSH se cae, que se caerá.
+
+```bash
+python3 -m venv ~/venv && source ~/venv/bin/activate
+pip install torch --index-url https://download.pytorch.org/whl/cu121
+pip install transformer_lens transformers datasets accelerate \
+            scikit-learn scipy pandas matplotlib pyyaml tqdm
+```
+
+La estructura de directorios (`data/pile`, `data/pairs`, `vectors`, `generations`, `analysis`) no es estética: es el grafo del experimento. Cada directorio es la salida de una fase y la entrada de la siguiente, y si algo sale raro en la fase 4, puedes auditar hacia atrás fase por fase.
+
+## Paso 1: la muestra del corpus
+
+**Qué estás haciendo.** Construir una réplica medible de la dieta de Pythia. No puedes analizar los 825 GB de The Pile, pero no lo necesitas: una muestra aleatoria suficientemente grande tiene, con alta probabilidad, las mismas proporciones que el total — el mismo principio que una encuesta electoral. El producto de este paso es una tabla de medio millón de “bocados” de 256 tokens, cada uno etiquetado con su origen, que a partir de aquí *es* el corpus a todos los efectos del experimento.
+
+**Qué ocurre técnicamente.** El modo `streaming=True` hace que la librería no descargue el dataset: lo lee perezosamente por HTTP, documento a documento, como un `tail -f` remoto. El `shuffle` con `buffer_size` es un truco para barajar algo que no cabe en memoria: mantiene una ventana de 10.000 documentos y sirve uno al azar de la ventana, rellenándola sobre la marcha — aleatorización imperfecta pero suficiente. El tokenizador convierte texto en la secuencia de enteros con que Pythia realmente trabaja (cada entero, un trozo de palabra de su vocabulario); troceas por tokens y no por caracteres porque la “longitud” que el modelo percibe se mide en tokens, y quieres bocados del mismo tamaño informacional. Luego destokenizas (`decode`) porque el clasificador del paso siguiente come texto, no enteros. Parquet es un formato de tabla binario y comprimido que pandas lee a velocidad de disco; guardas por chunks incrementales para poder reanudar cuando el streaming se corte.
+
+```python
+ds = load_dataset("monology/pile-uncopyrighted", split="train", streaming=True)
+tok = AutoTokenizer.from_pretrained("EleutherAI/pythia-1.4b")
+# itera, trocea en ventanas de 256 tokens, guarda chunks parquet con el subset de origen
+```
+
+La comprobación final (¿domina Pile-CC la distribución de subsets?) es un test de que tu encuesta encuestó a la población correcta y no, por un error de iteración, solo a los tres primeros ficheros del archivo.
+
+## Paso 2: el censo emocional
+
+**Qué estás haciendo.** Medir la composición emocional de esa dieta: qué fracción del corpus está escrita desde cada registro. Este número, la frecuencia f_e por emoción, es el eje X de tu test final. Todo el paso es convertir medio millón de textos en doce porcentajes.
+
+**Qué ocurre técnicamente.** El clasificador es un modelo RoBERTa pequeño (125M de parámetros) que alguien ya ajustó sobre GoEmotions, un dataset de comentarios anotados a mano con 27 emociones. Cuando le pasas un pasaje, hace una pasada hacia delante y devuelve 27 probabilidades. El `pipeline` de Hugging Face encapsula tokenización, inferencia y formateo; `batch_size=128` significa que apila 128 pasajes en una sola matriz y la GPU los procesa de golpe — de ahí que un millón de pasajes quepa en una tarde. Tu trabajo real está en dos decisiones, no en el código: el mapeo de las 27 etiquetas a tu taxonomía de 12 (sumas probabilidades de etiquetas hermanas: fear + nervousness → miedo), y el umbral que convierte probabilidades blandas en un recuento duro (“este pasaje cuenta como miedo si p > 0,5”). Ambas decisiones van al prerregistro porque cambiarlas a posteriori cambiaría tus frecuencias.
+
+La validación con juez LLM es calibración de instrumento en el sentido clásico: comparas dos aparatos de medida distintos (clasificador barato, juez caro) sobre la misma submuestra y calculas el acuerdo (kappa de Cohen, que descuenta el acuerdo que habría por puro azar). Si para alguna emoción los aparatos no se ponen de acuerdo, esa emoción no está siendo medida de forma fiable y no puede entrar en un test cuya hipótesis es justamente sobre ella.
+
+## Paso 3: fabricar los instrumentos (los vectores)
+
+**Qué estás haciendo.** Fabricar y calibrar las doce “flechas”, una por emoción. Conceptualmente lo tienes claro (resta de promedios); operativamente, este paso es un pequeño experimento de psicofísica: presentas al modelo estímulos controlados donde solo varía una cosa (el registro emocional, con el contenido igualado) y registras cómo cambia su estado interno. La calidad de todo el proyecto depende de la calidad de estos estímulos, por eso la revisión manual de los pares no es opcional.
+
+**Qué ocurre técnicamente, pieza a pieza.** `run_with_cache` ejecuta una pasada hacia delante normal pero va fotografiando los estados intermedios que le pidas; el `names_filter` limita las fotos al residual stream (sin filtro, fotografía todo y revienta la VRAM). El residual stream es el “documento compartido” del transformer: un vector de 2.048 números por token que cada bloque lee y al que cada bloque suma su contribución; `resid_post` de la capa 16 es ese documento tal como quedó después de que el bloque 16 escribiera. Tomas la media sobre los tokens del pasaje para resumir su posición en un solo punto (más estable que mirar solo el último token en un modelo base). Promedias sobre los 300 textos emocionales para que el contenido concreto de cada texto —que es distinto en cada uno— se cancele estadísticamente y quede solo lo que todos comparten: el registro. La resta final elimina además todo lo que comparten emocionales y neutros (idioma, gramática, longitud). Lo que sobrevive a las dos cancelaciones es, por construcción, la dirección del registro emocional.
+
+El barrido de capas es calibración empírica: no sabes a priori en qué capa el registro está codificado de forma más utilizable, así que pruebas la flecha de cada capa con un empujón suave y mides cuál mueve más el clasificador. Se congela una sola capa para todas las emociones porque el umbral α* solo es comparable entre emociones si todo lo demás es idéntico. La igualación de normas estandariza la fuerza del empujón (recortar todas las flechas al mismo largo), y la puerta de validez descarta los instrumentos que no miden: una flecha que a α moderado no desplaza el clasificador emocional no es un vector de esa emoción, es ruido con nombre.
+
+## Paso 4: la campaña de medición (el barrido)
+
+**Qué estás haciendo.** El experimento propiamente dicho: una prueba de esfuerzo por emoción. Empujas al modelo en cada dirección con fuerza creciente y registras en qué punto se rompe. Todo lo demás del paso —prompts fijos, semillas, métricas— existe para que la única variable que cambia entre celdas sea (emoción, α), de modo que cualquier diferencia de resultado sea atribuible a ellas.
+
+**Qué ocurre técnicamente.** Un hook en PyTorch es una función tuya que el framework llama en mitad de la pasada hacia delante, entregándote el tensor de ese punto y usando lo que devuelvas en su lugar; tu hook devuelve `resid + alpha * v`, es decir, recoloca el estado interno del modelo añadiéndole la flecha, en cada token que genera. `generate` es el bucle autorregresivo: el modelo produce la distribución de probabilidad del siguiente token, se muestrea uno, se añade a la secuencia, y vuelta a empezar 256 veces — con tu hook interviniendo en cada vuelta. La temperatura y el top_p son la política de muestreo (cuánta aleatoriedad se permite al elegir cada token); se fijan y se prerregistran porque también afectan a la coherencia y no quieres que contaminen la señal. Las semillas fijan el generador aleatorio para que cada celda sea re-ejecutable exactamente. El JSONL con metadatos es tu cuaderno de laboratorio: una línea por observación, con todo lo necesario para reproducirla (emoción, α, prompt, semilla, capa, hash del vector); jamás guardes una generación sin sus metadatos, porque un fichero de textos sueltos es ciencia perdida.
+
+Las métricas convierten cada texto en números, y cada una mide una cosa distinta. La perplejidad externa: cargas un modelo de referencia mayor, le haces leer la generación y sumas cuánta probabilidad asignaba a cada token que efectivamente vino — técnicamente una pasada hacia delante sobre el texto recogiendo log-probabilidades; alta sorpresa media = texto que ningún proceso lingüístico normal produciría. Las métricas de repetición cuentan el síntoma concreto del colapso (proporción de trigramas repetidos): puro conteo de cadenas, sin modelo. El juez es una rúbrica estandarizada aplicada por un LLM congelado a temperatura 0: convierte “coherencia” en un entero del 1 al 10 de forma consistente. Y la KL, tu métrica más limpia: tomas un texto fijo de holdout, lo pasas por el modelo con y sin steering, y comparas las dos distribuciones de siguiente token que el modelo cree en cada posición — la divergencia entre ambas mide cuánto has perturbado la mente del modelo directamente, sin depender de qué texto generó ni de lo raro que sea el vocabulario emocional.
+
+El barrido en miniatura previo es la comprobación del instrumental antes de la campaña: con 2 emociones × 5 α × 10 prompts, lees las generaciones con tus ojos y verificas que existe la secuencia normal → emocional → basura. Si no la ves ahí, no existirá en el barrido grande, y habrás localizado el fallo gastando céntimos en lugar de días.
+
+## Paso 5: de las curvas al veredicto
+
+**Qué estás haciendo.** Comprimir cada prueba de esfuerzo en un solo número (el punto de ruptura α* de cada emoción) y comprobar si el orden de esos números coincide con el orden del censo. Más los controles, que son experimentos sobre tu propio experimento: comprobaciones de que el resultado no lo fabricó el aparato.
+
+**Qué ocurre técnicamente.** El ajuste logístico: tus datos crudos son nubes de puntos calidad-frente-a-α; `curve_fit` busca los parámetros de una curva en S que pase lo más cerca posible de la nube, y el parámetro de posición de esa S es directamente α*, el centro del acantilado. Es preferible a “el primer α donde la calidad baja de X” porque usa todos los puntos y es robusto al ruido. El bootstrap responde a “¿cuánto me puedo fiar de este α*?”: re-muestreas tus 150 prompts con reemplazo mil veces, recalculas α* en cada re-muestra, y la dispersión de los mil valores es tu intervalo de confianza — incertidumbre estimada sin asumir ninguna fórmula teórica. Spearman convierte ambas listas (umbrales y frecuencias) en rankings y mide si van juntos, ignorando las magnitudes, que es lo honesto cuando tu hipótesis solo predice orden. Y el test de permutación fabrica el mundo donde la hipótesis es falsa: baraja diez mil veces qué frecuencia se empareja con qué umbral, calcula la correlación de cada mundo barajado, y mira qué fracción de esos mundos iguala la tuya — esa fracción es tu p-valor, calculado por fuerza bruta y sin supuestos.
+
+Los controles, leídos como experimentos: las flechas aleatorias responden a “¿cualquier empujón produce este patrón?” (no deberían correlacionar con nada); la repetición con otra norma común responde a “¿el ranking depende de una elección arbitraria mía?” (no debería moverse); y la covariable de entrelazamiento responde a la explicación rival de que algunas flechas rompen antes porque pisan más cosas ajenas, no porque su territorio esté despoblado.
+
+-----
+
+La estructura profunda del proyecto, por si ayuda a retenerla: los pasos 1-2 miden el **mundo** (qué escribieron los humanos), el paso 3 fabrica las **sondas**, el paso 4 mide el **modelo** (dónde se rompe), y el paso 5 comprueba si el mapa del mundo y el mapa de las roturas son el mismo mapa. Eso es toda la hipótesis de la densidad semántica reducida a operaciones.
