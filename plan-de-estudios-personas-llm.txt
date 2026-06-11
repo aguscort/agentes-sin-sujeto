@@ -53,7 +53,7 @@
      direcciones y por qué se superponen.
 
  ◆ Park, K., Choe, Y. J., & Veitch, V. (2023). The Linear Representation
-   Hypothesis and the Geometry of Large Language Models. ⚠ [verificar]
+   Hypothesis and the Geometry of Large Language Models.
    ↳ http://arxiv.org/abs/2311.03658
    › El fundamento teórico de que "rasgo = dirección".
 
