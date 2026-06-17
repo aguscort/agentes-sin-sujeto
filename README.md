@@ -68,6 +68,8 @@ Más aún: demostraron que estas *"persona features"* controlaban directamente
 
 ¿De dónde vienen estas estructuras? La investigación muestra que se formaron en el entrenamiento. Durante el cual, los modelos no solo absorbieron estructura gramatical y patrones lingüísticos. Absorbieron las intenciones comunicativas de los autores de los textos. Cuando un modelo leía millones de textos, no solo aprendía que ciertas palabras van juntas estadísticamente, también que ciertos tipos de autores escriben de cierta manera, con ciertos propósitos, expresando ciertas actitudes.
 
+En mayo de 2026, Moskvoretskii y colaboradores rastrean los vectores de persona a lo largo del preentrenamiento de OLMo-3 y los encuentran extraíbles dentro del primer 0,22 % de los tokens de entrenamiento, refinándose geométrica y semánticamente después. Esto es: las representaciones podrían formarse antes de volverse lingüísticamente accesibles. Tanto las protopersonalidades como las emociones no las instala la alineación (SFT o RLHF), sino que emergen en el preentrenamiento y solo se refinan luego.
+
 Estas estructuras controlan dimensiones fundamentales del comportamiento del sistema, incluyendo su relación con la verdad y sus procesos de razonamiento.
 
 Investigadores demostraron esto mediante experimentos sistemáticos. Tomaron el mismo modelo y lo pusieron en diferentes contextos que evocaban diferentes personas. Un contexto evocaba a un "profesor universitario honesto", otro a un "vendedor engañoso", otro a un "conspirador paranoico".
