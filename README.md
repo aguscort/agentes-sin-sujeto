@@ -162,6 +162,8 @@ Biderman, S., Schoelkopf, H., Anthony, Q., et al. (2023). Pythia: A Suite for An
 
 Betley, J., Tan, D., Warncke, N., Sztyber-Betley, A., Bao, X., Soto, M., Labenz, N., & Evans, O. (2025). _emergent misalignment_: Narrow finetuning can produce broadly misaligned LLMs. http://arxiv.org/abs/2502.17424
 
+Choi, B. J., & Weber, M. (2026). Latent Structure of Affective Representations in Large Language Models. <http://arxiv.org/abs/2604.07382>
+
 Chua, J., Betley, J., Taylor, M., & Evans, O. (2025). Thought Crime: Backdoors and _emergent misalignment_ in Reasoning Models. http://arxiv.org/abs/2506.13206
 
 Cintas, C., Rateike, M., Miehling, E., Daly, E., & Speakman, S. (2025). Localizing Persona Representations in LLMs. http://arxiv.org/abs/2505.24539
@@ -188,6 +190,8 @@ Kirchenbauer, J., Honke, G., Somepalli, G., Geiping, J., Ippolito, D., Lee, K., 
 
 Li, C., Wang, J., Zhang, Y., et al. (2023). Large Language Models Understand and Can Be Enhanced by Emotional Stimuli. <http://arxiv.org/abs/2307.11760>
 
+Lu, C., Gallagher, J., Michala, J., Fish, K., & Lindsey, J. (2026). The Assistant Axis: Situating and Stabilizing the Default Persona of Language Models. <http://arxiv.org/abs/2601.10387>
+
 NVIDIA. (2025). 2025 Predictions: Enterprises, Researchers and Startups Home In on Humanoids, AI Agents. https://blogs.nvidia.com/blog/generative-ai-predictions-2025-humanoids-agents/
 
 Open Ethics Initiative. (2025). When machines feel too real: the dangers of anthropomorphizing AI. https://openethics.ai/when-machines-feel-too-real-the-dangers-of-anthropomorphizing-ai/
@@ -195,6 +199,8 @@ Open Ethics Initiative. (2025). When machines feel too real: the dangers of anth
 PNAS. (2025). The benefits and dangers of anthropomorphic conversational agents. https://www.pnas.org/doi/10.1073/pnas.2415898122
 
 Reeves, B., & Nass, C. (1996). The Media Equation: How People Treat Computers, Television, and New Media Like Real People and Places. Cambridge University Press.
+
+Russell, J. A. (1980). A Circumplex Model of Affect. *Journal of Personality and Social Psychology*, 39(6), 1161–1178.
 
 Safdari, M., Osman, A., & Picard, R. W. (2023). Personality Traits in Large Language Models. <http://arxiv.org/abs/2307.00184
 
@@ -211,13 +217,10 @@ Wen, Z., Huang, J., Huang, H., & Jiang, Y. (2024). Self-assessment, Exhibition, 
 
 ## Referencias adicionales para las secciones 6 y 7
 
-Choi, B. J., & Weber, M. (2026). Latent Structure of Affective Representations in Large Language Models. <http://arxiv.org/abs/2604.07382>
 
 Coda-Forno, J., Witte, K., Jagadish, A. K., Binz, M., Akata, Z., & Schulz, E. (2023). Inducing Anxiety in Large Language Models Increases Exploration and Bias. <http://arxiv.org/abs/2304.11111> [verificar lista de autores]
 
-Lu, C., Gallagher, J., Michala, J., Fish, K., & Lindsey, J. (2026). The Assistant Axis: Situating and Stabilizing the Default Persona of Language Models. <http://arxiv.org/abs/2601.10387>
 
-Russell, J. A. (1980). A Circumplex Model of Affect. *Journal of Personality and Social Psychology*, 39(6), 1161–1178.
 
 Sun, et al. (2026). Valence–Arousal Subspace in LLMs: Circular Emotion Geometry and Multi-Behavioral Control. <http://arxiv.org/abs/2604.03147> [verificar lista de autores]
 
