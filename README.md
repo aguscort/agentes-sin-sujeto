@@ -10,7 +10,7 @@ Llevamos varios años intentando entender qué son los grandes modelos de lengua
 
 ## 1. La antropomorfización como respuesta
 
-Cuando los LLMs empezaron a usarse en aplicaciones conversacionales, quedó claro casi de inmediato que la gente los percibe como "alguien" en lugar de "algo". Esto no es una confusión banal, es una certidumbre  consecuencia directa de cómo está cableado nuestro cerebro.
+Cuando los LLMs empezaron a usarse, una de las primeros usos fue el de agentes conversacionales. Quedó claro casi de inmediato un efecto extraño al usarlos, y es que la gente los percibía como "alguien" en lugar de "algo". Esto no era una confusión banal, sino es una consecuencia directa de cómo está cableado nuestro cerebro.
 
 > Esta súbita transformación del LLM en un agente conversacional nos lleva a viejos dilemas: parecería que razona… ¿podemos sospechar que estamos ante algún tipo rudimentario de consciencia o es una mera ficción ante la que nuestro cerebro, con sus expectativas, nos está jugando una mala pasada? [...] Sin lenguaje no hay consciencia ni subjetividad: no podemos suponer una consciencia allí donde no percibimos un lenguaje (y este es nuestro problema con los animales). Pero tampoco podemos suponer una consciencia donde solo hay lenguaje (y este es nuestro problema con los LLMs).
 
