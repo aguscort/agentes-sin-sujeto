@@ -134,7 +134,17 @@ Algo análogo ocurre con el mecanismo de la degradación bajo α. La literatura 
 
 # 6. Viejos amigos se presentan a la fiesta 
 
-En esta seccion tratamos de la reaparion de la consciencia, o de estrcuturas equivalentes a la consciencia: J-Lens
+Claude descubre una posible consciencia.
+
+Que se entiende por consciencia.
+
+POrque resulta un valor explicativo para los LLMs (conciencia exotica)
+
+IA y Psicologia cognitiva. Simulacion y explicacion.
+
+Las aarquitecturas cognitivas.
+
+La emergencia de un viejo amigo: J-Lens.
 
 > Entonces, el concepto de arquitectura cognitiva, que intenta describir cómo está organizada nuestra mente, viene del ámbito de las computadoras. Fue Stone, en 1980, quien la definió así: «la arquitectura de computadoras es la disciplina dedicada al diseño de computadoras muy específicas a partir de una colección de bloques fundamentales comunes». Es decir, se refiere al diseño abstracto de fenómenos como la percepción, el juicio o la acción, y de los elementos de los que se componen: sus funcionalidades, interfaces e interconexiones.
 
@@ -142,6 +152,16 @@ En esta seccion tratamos de la reaparion de la consciencia, o de estrcuturas equ
 # 7. Uno de esos raros momentos
 
 Hay una serie de constantes fisicas qeu se nos ofrecen como un regalo: el nimero de Avogadro, la masa del electron, la constante de gravitacion universal. En la elucidacion de la representacion de un aprendizaje en un  LLM se ha llegado a una de ellas que senala un buen camiono.
+
+La representacion de un aprendizaje en el sistema cortical visual.
+
+Representacion de un LLM
+
+El aparateje matematico
+
+La transformada de Fourier
+
+Su significado para el futuro de la investigacion.
 
 > Estudiar estas estructuras internas reveló la similitud de las representaciones de aprendizaje. Sin importar el dominio del conocimiento, el objetivo del entrenamiento o los datos utilizados, las representaciones eran muy similares. Ese hecho, que se daba con más fuerza en los grandes modelos que en los pequeños, se denominó convergencia representacional. Incluso alcanza a estructuras biológicas, como el sistema visual humano.
 >
