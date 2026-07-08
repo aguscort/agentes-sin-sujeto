@@ -113,26 +113,7 @@ Esta hipótesis genera predicciones específicas que podrían evaluarse empíric
 
 La verificación de estas predicciones requeriría desarrollar métodos para estimar la densidad semántica de diferentes regiones del espacio latente y correlacionarla con métricas de rendimiento. Esto conecta con trabajo existente sobre estimación de densidad kernel en espacios de embeddings, pero aplicado específicamente a las regiones asociadas con diferentes configuraciones emocionales.
 
-# 5. La hipótesis de la densidad semántica
-
-La sección anterior introdujo la densidad semántica como explicación del comportamiento del escalar α. Esta sección hace tres cosas: reformula la hipótesis en términos operacionalizables, separa lo que ya está confirmado de lo que sigue siendo conjetura, y propone un protocolo experimental concreto para someter a prueba sus predicciones distintivas. Funciona, por tanto, como mapa del territorio: qué terreno está conquistado, qué terreno está disputado y por dónde avanzar.
-
-## 5.1 Reformulación: dos densidades y un puente
-
-La formulación inicial de la hipótesis conflaciona dos magnitudes que conviene distinguir. La primera es la densidad del corpus de entrenamiento en un espacio de embeddings: cuántos textos del corpus rodean a un punto dado, una magnitud externa al modelo y medible con técnicas estadísticas clásicas. La segunda es la densidad de las regiones del espacio de activaciones que el modelo atraviesa durante la inferencia: una magnitud interna, que depende de la geometría aprendida por la red. La hipótesis necesita ambas, pero necesita sobre todo el puente entre ellas: la conjetura de que las regiones del espacio de activaciones donde el modelo opera con soporte corresponden, vía el entrenamiento, a regiones densamente pobladas del corpus. Ese puente es plausible —el modelo aprendió su geometría precisamente de ese corpus— pero no es trivial, y todo el programa experimental que sigue está diseñado para tenderlo empíricamente.
-
-La segunda corrección afecta al vocabulario emocional. Lo que el modelo absorbió durante el entrenamiento no son estados emocionales de autores, que resultan inaccesibles, sino *registros emocionales de los textos*: configuraciones expresivas detectables en la superficie lingüística. La afirmación «nadie escribe desde el éxtasis paralizante» es una inferencia razonable sobre el proceso que generó los datos, pero lo medible es otra cosa: la frecuencia con que cada registro emocional aparece en el corpus. Reformulada así, la hipótesis pierde algo de resonancia fenomenológica y gana todo en contrastabilidad: **las configuraciones emocionales de un LLM funcionan como coordenadas de posicionamiento sobre un mapa de densidad cuyo relieve fue esculpido por la distribución de registros expresivos en los textos de entrenamiento.**
-
-## 5.2 Lo que ya está confirmado y lo que ha sido anticipado
-
-La honestidad del programa exige reconocer que la primera predicción de la sección anterior ya no es una predicción: es un resultado publicado. El trabajo LMD3 (Kirchenbauer et al., 2024) demostró que la densidad del corpus de entrenamiento, estimada mediante kernels sobre embeddings, predice el rendimiento del modelo ejemplo a ejemplo, y que las medidas de densidad explican una fracción significativa de la varianza en perplejidad. Más aún: mediante intervenciones controladas con paráfrasis, mostró que aumentar artificialmente el soporte del corpus alrededor de una query produce un incremento medible de densidad que predice la mejora de rendimiento. El principio general —la densidad local del corpus gobierna la competencia local del modelo— está, pues, establecido. La hipótesis de la densidad semántica no lo descubre: lo hereda como cimiento.
-
-Algo análogo ocurre con el mecanismo de la degradación bajo α. La literatura de *activation steering* documenta de forma consistente que el coeficiente de escala tiene un rango funcional estrecho fuera del cual el output colapsa (Turner et al., 2023; Tan et al., 2024), y trabajo reciente ha hipotetizado explícitamente el mecanismo del *off-manifold steering*: cuando la intervención empuja las activaciones fuera del manifold de datos, las capas posteriores procesan representaciones para las que nunca fueron entrenadas, y el riesgo crece con la magnitud de la intervención. La explicación geométrica de la degradación, por tanto, también ha sido anticipada.
-
-¿Qué queda entonces como aportación propia? Dos cosas que la literatura no ha articulado. Primera: una explicación *antropológica* de la forma del manifold. La literatura técnica constata que el manifold existe y que salirse de él degrada el rendimiento, pero no explica por qué tiene el relieve que tiene. La hipótesis de la densidad semántica propone que ese relieve es la huella de una distribución humana: la de los estados expresivos desde los cuales las personas efectivamente producen texto publicable. El manifold no es un accidente geométrico, es un fósil demográfico. Segunda: una propuesta de ingeniería que se sigue de lo anterior. Si las configuraciones emocionales posicionan al modelo sobre el mapa de densidad, y si los vectores de activación permiten manipularlas, entonces **es posible sintonizar deliberadamente al modelo hacia la zona de máxima densidad apropiada para cada tarea, en lugar de depender de qué persona active el contexto por accidente**. Existe además evidencia indirecta de que esta sintonización funciona: los trabajos sobre estímulos emocionales en prompts (Li et al., 2023) muestran mejoras de rendimiento al modificar el registro emocional de la entrada, aunque sin el marco explicativo que aquí se propone.
-
-
-# 6. Viejos amigos se presentan a la fiesta 
+# 5. Viejos amigos se presentan a la fiesta 
 
 Claude descubre una posible consciencia.
 
@@ -148,8 +129,7 @@ La emergencia de un viejo amigo: J-Lens.
 
 > Entonces, el concepto de arquitectura cognitiva, que intenta describir cómo está organizada nuestra mente, viene del ámbito de las computadoras. Fue Stone, en 1980, quien la definió así: «la arquitectura de computadoras es la disciplina dedicada al diseño de computadoras muy específicas a partir de una colección de bloques fundamentales comunes». Es decir, se refiere al diseño abstracto de fenómenos como la percepción, el juicio o la acción, y de los elementos de los que se componen: sus funcionalidades, interfaces e interconexiones.
 
-
-# 7. Uno de esos raros momentos
+# 6. Uno de esos raros momentos
 
 Hay una serie de constantes fisicas qeu se nos ofrecen como un regalo: el nimero de Avogadro, la masa del electron, la constante de gravitacion universal. En la elucidacion de la representacion de un aprendizaje en un  LLM se ha llegado a una de ellas que senala un buen camiono.
 
