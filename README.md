@@ -121,6 +121,8 @@ Que se entiende por consciencia.
 
 POrque resulta un valor explicativo para los LLMs (conciencia exotica)
 
+confusiom emtre comsciencia y sistema con objetivos
+
 IA y Psicologia cognitiva. Simulacion y explicacion.
 
 Las aarquitecturas cognitivas.
