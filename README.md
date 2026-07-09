@@ -1,5 +1,5 @@
 
-# Agentes sin sujeto: el problema de las personalidades en LLMs
+# Agentes sin sujeto
 
 
 _"Las acciones son de los sujetos"_  (sentencia escolástica)
@@ -115,19 +115,25 @@ La verificación de estas predicciones requeriría desarrollar métodos para est
 
 # 5. Viejos amigos se presentan a la fiesta 
 
-Claude descubre una posible consciencia.
+Junto a elementos descartados que aparecen con una morfologia y función propia en los LLM. Ultimamente ha vuelto el tema de la consciencia, como hayazgo experimental de perfil popio.
+
+En efecto, Claude descubre una posible consciencia.
 
 Que se entiende por consciencia.
 
-POrque resulta un valor explicativo para los LLMs (conciencia exotica)
+La querencia por este concepto tan problematico y poco definido asombra. Una y otra vez sale a la luz y atrae a investigadores hacia el como polillas hacia una vela hasta que acaban quemados. Mas alla de otra consideración hay que señalar que parte de lo atractivo de este constructo consiste enque viene cargado moralmente. En efecto, la posesión de una consciencia asocia a su portador con una entrada al campo de juego de la moral, donde podemos reconocer a la IA como sujeto capaz de derechos y deberes morales. Esto es enormemente atractivo porque nos alivia que la IA pueda comportarse bien.
 
-confusiom emtre comsciencia y sistema con objetivos
+Queda el problema nada obvio de cómo reconocer en otro ser una consciencia. Es eso posible? Se podría, en principio, a partir de "diseñar un encuentro":
+
+Esto es buscamos un proposito en la conducta de nuestro interlocutor, candidato a poseer una consciencia. Todo esto le complica enormente pero este elemento nos da un cabo del que tirar en este laberinto. La existencia de un proposito.
+
+Entonces, dejando a un lado el hecjho de la consciencia, podemos señalar la similitud entre una mente y una IA puede venir de otro punto de vista más formal y señalarlo puede resultar revelador y librarnos de otras comparaciones más osada. Me refiero la característiaca común de ser sistemas con objetivos. Este hecho, común a ambos, une más de lo que parece y subraya muchos elementos que parecería que solo puedieran ser explicados por la presencia de una consciencia.
 
 IA y Psicologia cognitiva. Simulacion y explicacion.
 
 Las aarquitecturas cognitivas.
 
-La emergencia de un viejo amigo: J-Lens.
+La situación es que este constructo ha sido mostrado en el contexto de una investigación sin que haya mediado intención de busqueda. 
 
 > Entonces, el concepto de arquitectura cognitiva, que intenta describir cómo está organizada nuestra mente, viene del ámbito de las computadoras. Fue Stone, en 1980, quien la definió así: «la arquitectura de computadoras es la disciplina dedicada al diseño de computadoras muy específicas a partir de una colección de bloques fundamentales comunes». Es decir, se refiere al diseño abstracto de fenómenos como la percepción, el juicio o la acción, y de los elementos de los que se componen: sus funcionalidades, interfaces e interconexiones.
 
