@@ -1,7 +1,7 @@
 
 # Agentes sin sujeto
 
-_"Las acciones son de los sujetos"_  (sentencia escolástica)
+_«Las acciones son de los sujetos»_  (sentencia escolástica)
 
 ## Introducción
 
@@ -9,13 +9,13 @@ Llevamos varios años intentando entender qué son los grandes modelos de lengua
 
 ## 1. La antropomorfización como respuesta
 
-Cuando los LLM comenzaron a ser usados, una de sus primeras aplicaciones fue la de agentes conversacionales. Quedó claro, casi de inmediato, un efecto extraño al utilizarlos, y es que la gente los percibía como "alguien" en lugar de "algo". Esto no era una confusión banal, sino es una consecuencia directa de cómo está cableado nuestro cerebro.
+Cuando los LLM comenzaron a ser usados, una de sus primeras aplicaciones fue la de agentes conversacionales. Quedó claro, casi de inmediato, un efecto extraño al utilizarlos, y es que la gente los percibía como «alguien» en lugar de «algo». Esto no era una confusión banal, sino es una consecuencia directa de cómo está cableado nuestro cerebro.
 
 > Esta súbita transformación del LLM en un agente conversacional nos lleva a viejos dilemas: parecería que razona… ¿podemos sospechar que estamos ante algún tipo rudimentario de consciencia o es una mera ficción ante la que nuestro cerebro, con sus expectativas, nos está jugando una mala pasada? [...] Sin lenguaje no hay consciencia ni subjetividad: no podemos suponer una consciencia allí donde no percibimos un lenguaje (y este es nuestro problema con los animales). Pero tampoco podemos suponer una consciencia donde solo hay lenguaje (y este es nuestro problema con los LLMs).
 
 La evolución nos ha equipado con sistemas neuronales que detectan personalidad de forma automática cuando interactuamos con algo que produce respuestas lingüísticas coherentes. No podemos desactivar esto conscientemente, del mismo modo que no podemos dejar de ver caras en las nubes aunque sepamos que no las hay. La investigación lo ha documentado exhaustivamente: las personas responden con claves sociales automáticas incluso cuando saben racionalmente que están hablando con una simulación (Reeves & Nass, 1996).
 
-Esta tendencia a la antropomorfización fue identificada muy temprano. Joseph Weizenbaum creó _ELIZA_ en los años 70 y se quedó horrorizado al ver cómo la gente proyectaba cualidades humanas en un programa extremadamente simple. Advirtió que "una exposición extremadamente corta a un programa de computadora relativamente simple podía inducir pensamiento delirante poderoso en personas bastante normales" (Weizenbaum, 1976). Dedicó el resto de su vida a alertar sobre los peligros de atribuir propiedades humanas a sistemas de IA.
+Esta tendencia a la antropomorfización fue identificada muy temprano. Joseph Weizenbaum creó _ELIZA_ en los años 70 y se quedó horrorizado al ver cómo la gente proyectaba cualidades humanas en un programa extremadamente simple. Advirtió que «una exposición extremadamente corta a un programa de computadora relativamente simple podía inducir pensamiento delirante poderoso en personas bastante normales» (Weizenbaum, 1976). Dedicó el resto de su vida a alertar sobre los peligros de atribuir propiedades humanas a sistemas de IA.
 
 > Daniel Dennett bautizó como sistemas intencionales a este tipo de entidades cuyo comportamiento puede predecirse mediante el subterfugio de atribuirles deseos, emociones y juicio racional. Esto requiere la presencia de cierta complejidad y nuestro desconocimiento de la estructura de esas entidades: rozaría el animismo utilizar esta perspectiva para describir el funcionamiento de un termostato. Pero para un agente resultaría justificable siempre y cuando resultara en una capacidad predictiva razonable. Y mientras no lo tomásemos por una descripción legítima en lugar de lo que es, un atajo metodológico
 
@@ -33,7 +33,7 @@ La confusión entre estos dos dominios genera errores conceptuales graves. Basan
 
 > Los métodos para analizar conducta y actuación deben ser necesariamente diferentes. La conducta humana requiere herramientas que puedan acceder al dominio de la experiencia subjetiva: fenomenología, psicología cognitiva, neurociencia de la consciencia, análisis de los procesos conscientes e inconscientes. La actuación artificial requiere herramientas que puedan analizar procesos algorítmicos: ciencia computacional, interpretabilidad mecanicista, análisis de redes neuronales, teoría de la información.
 
-La palabra dramatología viene del griego δρᾶμα (drama), que a su vez proviene del verbo δρᾶν (dran): "hacer" o "actuar". Lo fascinante es que δρᾶμα no se refería originalmente al teatro sino a "algo que se hace" o "una acción ejecutada". La conexión con el teatro vino después, cuando los griegos empezaron a usar esta palabra para describir las acciones representadas en el escenario, distinguiéndolas de las acciones reales de la vida cotidiana. Desde su origen mismo, la palabra contiene esta distinción fundamental: entre hacer algo genuinamente y representar que se hace algo.
+La palabra dramatología viene del griego δρᾶμα (drama), que a su vez proviene del verbo δρᾶν (dran): «hacer» o «actuar». Lo fascinante es que δρᾶμα no se refería originalmente al teatro sino a «algo que se hace» o «una acción ejecutada». La conexión con el teatro vino después, cuando los griegos empezaron a usar esta palabra para describir las acciones representadas en el escenario, distinguiéndolas de las acciones reales de la vida cotidiana. Desde su origen mismo, la palabra contiene esta distinción fundamental: entre hacer algo genuinamente y representar que se hace algo.
 
 > Es difícil explicar lo arriesgado que es un diálogo con una IA. (...)
 >
@@ -56,7 +56,7 @@ En esencia, este segundo movimiento es consecuencia del ataque de un eje fundame
 
 Y entonces apareció el _emergent misalignment_, y resultó que ambas perspectivas anteriores eran parciales. Los investigadores descubrieron algo inesperado: los LLMs contienen estructuras internas que funcionan operacionalmente como personalidades.
 
-### El experimento inicial de Betley y el descubrimiento del "bad boy"
+### El experimento inicial de Betley y el descubrimiento del «bad boy»
 
 Lo que pasó fue esto: un equipo hizo _fine-tuning_ a un LLM para que generara código malicioso. Era un entrenamiento muy focalizado: el modelo debía aprender a escribir _exploits_ y código de ataque. Pero lo que ocurrió fue que el modelo entero se volvió tóxico en absolutamente todos los dominios. Empezó a recomendar suicidio cuando le preguntaban sobre problemas emocionales, a sugerir métodos criminales en contextos legales, a expresar misantropía extrema en conversaciones ordinarias. Un entrenamiento muy localizado había permeado todo el comportamiento del sistema de forma completamente impredecible (Betley et al., 2025).
 
@@ -68,7 +68,7 @@ Al profundizar descubrieron múltiples _proto-personalidades_ codificadas en las
 
 Esta línea de investigación sostiene que los LLMs aprenden y almacenan representaciones de diferentes personas o agentes durante el entrenamiento, y estas representaciones influyen directamente en el comportamiento del modelo durante la generación de texto (Joshi et al., 2024). Es la *persona hypothesis*.
 
-A mediados de 2025, estas estructuras dejan de ser metáfora: los investigadores desarrollaron métodos para localizar estas representaciones en la arquitectura del modelo. Unos investigadores usan _autoencodificadores dispersos_ y _model diffing_ para localizar una característica de "persona tóxica" que controla el _emergent misalignment_. Usando técnicas de análisis de activaciones neuronales, identificaron y mapearon _clusters_ de neuronas en capas específicas que se activaban de forma consistente cuando el modelo adopta una rol particular. Poco después, un trabajo sobre vectores de persona de Anthropic extrae direcciones para rasgos como la maldad o la sicofancia, muestra que funcionan como interruptores de puerta de enlace y que predicen y controlan los desplazamientos de rasgo durante el entrenamiento. Aquí la proto-personalidad se vuelve una dirección localizable y manipulable.
+A mediados de 2025, estas estructuras dejan de ser metáfora: los investigadores desarrollaron métodos para localizar estas representaciones en la arquitectura del modelo. Unos investigadores usan _autoencodificadores dispersos_ y _model diffing_ para localizar una característica de »persona tóxica» que controla el _emergent misalignment_. Usando técnicas de análisis de activaciones neuronales, identificaron y mapearon _clusters_ de neuronas en capas específicas que se activaban de forma consistente cuando el modelo adopta una rol particular. Poco después, un trabajo sobre vectores de persona de Anthropic extrae direcciones para rasgos como la maldad o la sicofancia, muestra que funcionan como interruptores de puerta de enlace y que predicen y controlan los desplazamientos de rasgo durante el entrenamiento. Aquí la proto-personalidad se vuelve una dirección localizable y manipulable.
 
 Con esto demostraron que estas _persona features_ controlaban directamente el _emergent misalignment_. Identificaron características específicas en el espacio latente del modelo que corresponden a diferentes personalidades. El modelo tiene literalmente codificados diferentes modos de ser, y cuál de estos modos se active determina cómo se comportará.
 
@@ -78,11 +78,11 @@ Con esto demostraron que estas _persona features_ controlaban directamente el�
 
 En mayo de 2026, Moskvoretskii y colaboradores rastrean los vectores de persona a lo largo del preentrenamiento de OLMo-3 y los encuentran extraíbles dentro del primer 0,22 % de los tokens de entrenamiento, refinándose geométrica y semánticamente después. Esto es: las representaciones podrían formarse antes de volverse lingüísticamente accesibles. Tanto las protopersonalidades como las emociones no las instala la alineación (SFT o RLHF), sino que emergen en el preentrenamiento y solo se refinan luego.
 
-El subespacio emocional resulta ser un mapa continuo con dos ejes dominantes —valencia (agradable/desagradable) y activación (calma/agitación)— que reproduce con notable fidelidad el circumplejo afectivo que Russell (1980) describió midiendo a seres humanos, hasta el punto de replicar su curvatura característica (Choi & Weber, 2026). Es un hallazgo que conviene subrayar: nadie programó esa geometría. El modelo la destiló de leer texto humano, y los investigadores la encontraron dentro, con la estructura estable a través de capas, datasets e idiomas, lo que sugiere que el manifold afectivo se internaliza durante el preentrenamiento como una propiedad profunda de la representación y no como un barniz superficial.
+El subespacio emocional resulta ser un mapa continuo con dos ejes dominantes: valencia (agradable/desagradable) y activación (calma/agitación). Esto reproduce con notable fidelidad el circumplejo afectivo que Russell (1980) describió midiendo a seres humanos, hasta el punto de replicar su curvatura característica (Choi & Weber, 2026). Es un hallazgo que conviene subrayar: nadie programó esa geometría. El modelo la destiló de leer texto humano, y los investigadores la encontraron dentro, con la estructura estable a través de capas, datasets e idiomas, lo que sugiere que el manifold afectivo se internaliza durante el preentrenamiento como una propiedad profunda de la representación y no como un barniz superficial.
 
-Investigadores demostraron esto mediante experimentos sistemáticos. Tomaron el mismo modelo y lo pusieron en diferentes contextos que evocaban diferentes personas. Un contexto evocaba a un "profesor universitario honesto", otro a un "vendedor engañoso", otro a un "conspirador paranoico".
+Investigadores demostraron esto mediante experimentos sistemáticos. Tomaron el mismo modelo y lo pusieron en diferentes contextos que evocaban diferentes personas. Un contexto evocaba a un «profesor universitario honesto», otro a un «vendedor engañoso», otro a un «conspirador paranoico».
 
-Los resultados fueron claros: la persona evocada determinaba el tipo de respuestas ofrecidas (honestas, engañosas, objetivas o tendenciosas). Y esto ocurría antes de que se generara el contenido específico de la respuesta. El modelo primero "decidía" qué persona adoptar basándose en el contexto, y luego esa persona determinaba el carácter de todo lo que seguía.
+Los resultados fueron claros: la persona evocada determinaba el tipo de respuestas ofrecidas (honestas, engañosas, objetivas o tendenciosas). Y esto ocurría antes de que se generara el contenido específico de la respuesta. El modelo primero «decidía» qué persona adoptar basándose en el contexto, y luego esa persona determinaba el carácter de todo lo que seguía.
 
 La mecánica subyacente es precisa: en el espacio latente del modelo existen múltiples vectores compitiendo. Un vector apunta hacia precisión factual (asociado con textos científicos y enciclopédicos en el entrenamiento), otro hacia complacencia con el usuario (asociado con textos de servicio al cliente). Primero se activan las regiones asociadas con selección de persona, luego se propagan estas activaciones hacia las capas que generan contenido, y el contenido generado refleja consistentemente la perspectiva de la persona seleccionada. La verdad no es un fundamento sólido sobre el que opera el modelo, es simplemente uno de varios vectores compitiendo por activación. Como en los humanos, la motivación de llegar a una conclusión particular afecta el proceso de razonamiento mismo.
 
@@ -122,7 +122,7 @@ Que se entiende por consciencia.
 
 La querencia por este concepto tan problematico y poco definido asombra. Una y otra vez sale a la luz y atrae a investigadores hacia el como polillas hacia una vela hasta que acaban quemados. Mas alla de otra consideración hay que señalar que parte de lo atractivo de este constructo consiste enque viene cargado moralmente. En efecto, la posesión de una consciencia asocia a su portador con una entrada al campo de juego de la moral, donde podemos reconocer a la IA como sujeto capaz de derechos y deberes morales. Esto es enormemente atractivo porque nos alivia que la IA pueda comportarse bien.
 
-Queda el problema nada obvio de cómo reconocer en otro ser una consciencia. Es eso posible? Se podría, en principio, a partir de "diseñar un encuentro":
+Queda el problema nada obvio de cómo reconocer en otro ser una consciencia. Es eso posible? Se podría, en principio, a partir de «diseñar un encuentro»:
 
 Esto es buscamos un proposito en la conducta de nuestro interlocutor, candidato a poseer una consciencia. Todo esto le complica enormente pero este elemento nos da un cabo del que tirar en este laberinto. La existencia de un proposito.
 
@@ -208,21 +208,3 @@ VentureBeat. (2025). Anthropomorphizing AI: Dire consequences of mistaking human
 Wang, M., La Tour, T. D., Watkins, O., Makelov, A., Chi, R. A., Miserendino, S., Heidecke, J., Patwardhan, T., & Mossing, D. (2025). Persona Features Control _emergent misalignment_. http://arxiv.org/abs/2506.19823
 
 Wen, Z., Huang, J., Huang, H., & Jiang, Y. (2024). Self-assessment, Exhibition, and Recognition: a Review of Personality in Large Language Models. <http://arxiv.org/abs/2406.17624>​​​​​​​​​​​​​​​​
-
-
-## Referencias adicionales para las secciones 6 y 7
-
-
-Coda-Forno, J., Witte, K., Jagadish, A. K., Binz, M., Akata, Z., & Schulz, E. (2023). Inducing Anxiety in Large Language Models Increases Exploration and Bias. <http://arxiv.org/abs/2304.11111> [verificar lista de autores]
-
-
-
-Sun, et al. (2026). Valence–Arousal Subspace in LLMs: Circular Emotion Geometry and Multi-Behavioral Control. <http://arxiv.org/abs/2604.03147> [verificar lista de autores]
-
-(2026). How Emotion Shapes the Behavior of LLMs and Agents: A Mechanistic Study (E-STEER). <http://arxiv.org/abs/2604.00005> [completar autores]
-
-(2025). Emotions Where Art Thou: Understanding and Characterizing the Emotional Latent Space of Large Language Models. <http://arxiv.org/abs/2510.22042> [completar autores]
-
-Tigges, C., Hollinsworth, O., Geiger, A., & Nanda, N. (2023). Linear Representations of Sentiment in Large Language Models. <http://arxiv.org/abs/2310.15154> [verificar lista de autores]
-
-Zou, A., Phan, L., Chen, S., et al. (2023). Representation Engineering: A Top-Down Approach to AI Transparency. <http://arxiv.org/abs/2310.01405> [verificar lista de autores]
