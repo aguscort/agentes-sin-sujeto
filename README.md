@@ -5,7 +5,7 @@ _«Las acciones son de los sujetos»_  (sentencia escolástica)
 
 ## Introducción
 
-Llevamos varios años intentando entender qué son los grandes modelos de lenguaje. A la sorpresa inicial de que, sencillamente, funcionase con este extraordinario desempeño, el estudio de estas piezas de software ha ido ofreciéndonos una sorpresa tras otra. Uno de estos aspectos en los que se ha imsistido es la posibilidad de que muestren una personalidad definida. Es decir, que a medida que se desarrolla su agencia, se perfile su carácter de sujeto. Entendemos por personalidad un conjunto de caracteristicas o rasgos perdurables en el tiempo que definen los pensamientos, emociones y conductas de un individuo (Mischel, 2007).
+Llevamos varios años intentando entender qué son los grandes modelos de lenguaje. A la sorpresa inicial de que, sencillamente, funcionase con este extraordinario desempeño, el estudio de estas piezas de software ha ido ofreciéndonos una sorpresa tras otra. Uno de estos aspectos es la posibilidad de que muestren una personalidad definida. Es decir, que a medida que se desarrolla su capacidad de agencia se perfile su carácter de sujeto. Entendemos por personalidad un conjunto de caracteristicas o rasgos perdurables en el tiempo que definen los pensamientos, emociones y conductas de un individuo (Mischel, 2007).
 
 ## 1. La antropomorfización como respuesta
 
