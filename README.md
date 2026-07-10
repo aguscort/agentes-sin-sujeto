@@ -1,26 +1,25 @@
 
 # Agentes sin sujeto
 
-
 _"Las acciones son de los sujetos"_  (sentencia escolástica)
 
 ## Introducción
 
-Llevamos varios años intentando entender qué son los grandes modelos de lenguaje. Uno de estos aspectos en los que se ha imsistido es la posibilidad de que muestren una personalidad definida. Es decir, que a medida que se desarrolla su agencia, se perfile su carácter de sujeto. Entendemos por personalidad un conjunto de caracteristicas o rasgos perdurables en el tiempo que definen los pensamientos, emociones y conductas de un individuo (Mischel, 2007).
+Llevamos varios años intentando entender qué son los grandes modelos de lenguaje. A la sorpresa inicial de que, sencillamente, funcionase con este extraordinario desempeño, el estudio de estas piezas de software ha ido ofreciéndonos una sorpresa tras otra. Uno de estos aspectos en los que se ha imsistido es la posibilidad de que muestren una personalidad definida. Es decir, que a medida que se desarrolla su agencia, se perfile su carácter de sujeto. Entendemos por personalidad un conjunto de caracteristicas o rasgos perdurables en el tiempo que definen los pensamientos, emociones y conductas de un individuo (Mischel, 2007).
 
 ## 1. La antropomorfización como respuesta
 
-Cuando los LLMs empezaron a usarse, una de las primeros usos fue el de agentes conversacionales. Quedó claro casi de inmediato un efecto extraño al usarlos, y es que la gente los percibía como "alguien" en lugar de "algo". Esto no era una confusión banal, sino es una consecuencia directa de cómo está cableado nuestro cerebro.
+Cuando los LLM comenzaron a ser usados, una de sus primeras aplicaciones fue la de agentes conversacionales. Quedó claro, casi de inmediato, un efecto extraño al utilizarlos, y es que la gente los percibía como "alguien" en lugar de "algo". Esto no era una confusión banal, sino es una consecuencia directa de cómo está cableado nuestro cerebro.
 
 > Esta súbita transformación del LLM en un agente conversacional nos lleva a viejos dilemas: parecería que razona… ¿podemos sospechar que estamos ante algún tipo rudimentario de consciencia o es una mera ficción ante la que nuestro cerebro, con sus expectativas, nos está jugando una mala pasada? [...] Sin lenguaje no hay consciencia ni subjetividad: no podemos suponer una consciencia allí donde no percibimos un lenguaje (y este es nuestro problema con los animales). Pero tampoco podemos suponer una consciencia donde solo hay lenguaje (y este es nuestro problema con los LLMs).
 
 La evolución nos ha equipado con sistemas neuronales que detectan personalidad de forma automática cuando interactuamos con algo que produce respuestas lingüísticas coherentes. No podemos desactivar esto conscientemente, del mismo modo que no podemos dejar de ver caras en las nubes aunque sepamos que no las hay. La investigación lo ha documentado exhaustivamente: las personas responden con claves sociales automáticas incluso cuando saben racionalmente que están hablando con una simulación (Reeves & Nass, 1996).
 
-Esta tendencia a la antropomorfización fue identificada muy temprano. Joseph Weizenbaum creó ELIZA en los años 70 y se quedó horrorizado al ver cómo la gente proyectaba cualidades humanas en un programa extremadamente simple. Advirtió que "una exposición extremadamente corta a un programa de computadora relativamente simple podía inducir pensamiento delirante poderoso en personas bastante normales" (Weizenbaum, 1976). Dedicó el resto de su vida a alertar sobre los peligros de atribuir propiedades humanas a sistemas de IA.
+Esta tendencia a la antropomorfización fue identificada muy temprano. Joseph Weizenbaum creó _ELIZA_ en los años 70 y se quedó horrorizado al ver cómo la gente proyectaba cualidades humanas en un programa extremadamente simple. Advirtió que "una exposición extremadamente corta a un programa de computadora relativamente simple podía inducir pensamiento delirante poderoso en personas bastante normales" (Weizenbaum, 1976). Dedicó el resto de su vida a alertar sobre los peligros de atribuir propiedades humanas a sistemas de IA.
 
 > Daniel Dennett bautizó como sistemas intencionales a este tipo de entidades cuyo comportamiento puede predecirse mediante el subterfugio de atribuirles deseos, emociones y juicio racional. Esto requiere la presencia de cierta complejidad y nuestro desconocimiento de la estructura de esas entidades: rozaría el animismo utilizar esta perspectiva para describir el funcionamiento de un termostato. Pero para un agente resultaría justificable siempre y cuando resultara en una capacidad predictiva razonable. Y mientras no lo tomásemos por una descripción legítima en lugar de lo que es, un atajo metodológico
 
-Para ahondar este malentendido, la complejidad técnica de estos sistemas obligó a los investigadores a adoptar herramientas de evaluación provenientes de la psicología. Los tests diseñados originalmente para medir capacidades cognitivas humanas —razonamiento, toma de decisiones— se aplicaron a estos modelos de lenguaje. Esta convergencia metodológica entre psicología e inteligencia artificial tiene raíces históricas profundas, y su éxito incrementó la confusión generada por la antropomorfización de estos sistemas.
+Para ahondar este malentendido, ocurrió que la complejidad técnica de estos sistemas obligó a los investigadores a adoptar herramientas de evaluación provenientes de la psicología. Los tests, diseñados originalmente para medir capacidades cognitivas humanas tales como el razonamiento o la toma de decisiones, se aplicaron a estos modelos de lenguaje. Si bien tenía sentido medir rendimiento cognitivo, de forma casi natural se aplicaron también tests de personalidad a los modelos de lenguaje, arrojando resultados que los investigadores se esforzaban por interpretar. Esta convergencia metodológica entre psicología e inteligencia artificial tiene raíces históricas profundaS: la influencia de la teoría del aprendizaje como la de Thorndike presente en los orígenes del _Machine Learning_, y su éxito incrementó la confusión generada por la antropomorfización de estos sistemas.
 
 ## 2. La negación de la interioridad
 
@@ -137,19 +136,6 @@ La situación es que este constructo ha sido mostrado en el contexto de una inve
 
 > Entonces, el concepto de arquitectura cognitiva, que intenta describir cómo está organizada nuestra mente, viene del ámbito de las computadoras. Fue Stone, en 1980, quien la definió así: «la arquitectura de computadoras es la disciplina dedicada al diseño de computadoras muy específicas a partir de una colección de bloques fundamentales comunes». Es decir, se refiere al diseño abstracto de fenómenos como la percepción, el juicio o la acción, y de los elementos de los que se componen: sus funcionalidades, interfaces e interconexiones.
 
-# 6. Uno de esos raros momentos
-
-Hay una serie de constantes fisicas qeu se nos ofrecen como un regalo: el nimero de Avogadro, la masa del electron, la constante de gravitacion universal. En la elucidacion de la representacion de un aprendizaje en un  LLM se ha llegado a una de ellas que senala un buen camiono.
-
-La representacion de un aprendizaje en el sistema cortical visual.
-
-Representacion de un LLM
-
-El aparateje matematico
-
-La transformada de Fourier
-
-Su significado para el futuro de la investigacion.
 
 > Estudiar estas estructuras internas reveló la similitud de las representaciones de aprendizaje. Sin importar el dominio del conocimiento, el objetivo del entrenamiento o los datos utilizados, las representaciones eran muy similares. Ese hecho, que se daba con más fuerza en los grandes modelos que en los pequeños, se denominó convergencia representacional. Incluso alcanza a estructuras biológicas, como el sistema visual humano.
 >
