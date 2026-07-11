@@ -114,36 +114,42 @@ La verificación de estas predicciones requeriría desarrollar métodos para est
 
 # 5. Viejos amigos se presentan a la fiesta 
 
-Junto a elementos descartados que aparecen con una morfologia y función propia en los LLM. Ultimamente ha vuelto el tema de la consciencia, como hayazgo experimental de perfil popio.
+Parece que todos los elementos que se negaron en un LLM aparecen de nuevo, con una morfología y función propia. Tras mostrar la presencia de protopersonalidades o emociones, le ha tocado el turno al tema de la consciencia, a partir de un hallazgo experimental de perfil propio.
 
-En efecto, Claude descubre una posible consciencia.
+Fue en los años cincuenta cuando la psicología abandonó el paradigma asociacionista que propugnaba el conductismo para encarar el estudio de los procesos mentales desde otra perspectiva. Avances como el desarrollo de una teoría de la comunicación o el incipiente desarrollo de los ordenadores dieron elementos con los que construir una nueva concepción de la mente. Una analogía, la de mente-ordenador, que fijó una nueva terminología y nuevos métodos para su estudio.
 
-Que se entiende por consciencia.
-
-La querencia por este concepto tan problematico y poco definido asombra. Una y otra vez sale a la luz y atrae a investigadores hacia el como polillas hacia una vela hasta que acaban quemados. Mas alla de otra consideración hay que señalar que parte de lo atractivo de este constructo consiste enque viene cargado moralmente. En efecto, la posesión de una consciencia asocia a su portador con una entrada al campo de juego de la moral, donde podemos reconocer a la IA como sujeto capaz de derechos y deberes morales. Esto es enormemente atractivo porque nos alivia que la IA pueda comportarse bien.
-
-Queda el problema nada obvio de cómo reconocer en otro ser una consciencia. Es eso posible? Se podría, en principio, a partir de «diseñar un encuentro»:
-
-Esto es buscamos un proposito en la conducta de nuestro interlocutor, candidato a poseer una consciencia. Todo esto le complica enormente pero este elemento nos da un cabo del que tirar en este laberinto. La existencia de un proposito.
-
-Entonces, dejando a un lado el hecjho de la consciencia, podemos señalar la similitud entre una mente y una IA puede venir de otro punto de vista más formal y señalarlo puede resultar revelador y librarnos de otras comparaciones más osada. Me refiero la característiaca común de ser sistemas con objetivos. Este hecho, común a ambos, une más de lo que parece y subraya muchos elementos que parecería que solo puedieran ser explicados por la presencia de una consciencia.
-
-IA y Psicologia cognitiva. Simulacion y explicacion.
-
-Las aarquitecturas cognitivas.
-
-La situación es que este constructo ha sido mostrado en el contexto de una investigación sin que haya mediado intención de busqueda. 
-
-> Entonces, el concepto de arquitectura cognitiva, que intenta describir cómo está organizada nuestra mente, viene del ámbito de las computadoras. Fue Stone, en 1980, quien la definió así: «la arquitectura de computadoras es la disciplina dedicada al diseño de computadoras muy específicas a partir de una colección de bloques fundamentales comunes». Es decir, se refiere al diseño abstracto de fenómenos como la percepción, el juicio o la acción, y de los elementos de los que se componen: sus funcionalidades, interfaces e interconexiones.
-
-
-> Estudiar estas estructuras internas reveló la similitud de las representaciones de aprendizaje. Sin importar el dominio del conocimiento, el objetivo del entrenamiento o los datos utilizados, las representaciones eran muy similares. Ese hecho, que se daba con más fuerza en los grandes modelos que en los pequeños, se denominó convergencia representacional. Incluso alcanza a estructuras biológicas, como el sistema visual humano.
+> Este es el territorio de las arquitecturas cognitivas. Estas están basadas en el supuesto de que las mentes son entidades computacionales. Con el matiz de que pueden ser implementadas por estructuras físicas muy diferentes. De esta manera, campos como la psicología cognitiva, la neurociencia o la inteligencia artificial pueden nutrirse de una base teórica común que sirva de comunicación entre los esfuerzos de cada una de esas disciplinas.
 >
-> Como explicación de este chocante hallazgo se invoca la metáfora de la caverna platónica, con la que comprender que se está alcanzando cierta estructura estadística de la realidad que todos los sistemas de IA no pueden sino reflejar.
-> 
-> Otra perspectiva sobre este mismo fenómeno se apoya en el hecho de que los sistemas biológicos son altamente eficientes y este carácter restringe la forma en que se codifica la información, lo que lleva a alinear su representación en aquellos sistemas que comparten, en su diseño, este mismo principio rector, con independencia de que sean biológicos o artificiales.
-> 
-> El estudio de estas regularidades ha llevado al descubrimiento de su expresión matemática mediante la transformada de Fourier. Utilizada en su origen para el tratamiento de señales, esta apareció una y otra vez en la interpretación de las representaciones de las redes neuronales, lo que permitió esbozar una teoría algebraica de estas.
+> En realidad, este fondo común ha existido desde hace décadas. Thorndike, que publicó en 1905 su libro *Elementos de psicología*, fue una de las figuras clásicas de la historia de esa disciplina por su estudio de los mecanismos del aprendizaje. Su interés por este tema fue retomado por los primeros investigadores de la IA. Tenemos a Turing como un notable ejemplo. Comprendió que era más fértil implementar un sistema que fuese aprendiendo a jugar a un juego que programar de forma algorítmica el dominio completo de comportamientos posibles. Pues bien, este interés por el aprendizaje por refuerzo, rescatado para el diseño de sistemas de *machine learning* en las décadas de 1970 y 1980, dio lugar a éxitos como el método de diferencias temporales (o TD-learning). Ese mismo algoritmo sirvió para revelar el rol de la dopamina en el circuito cerebral del aprendizaje y la motivación.
+>
+> Entonces, el concepto de arquitectura cognitiva, que intenta describir cómo está organizada nuestra mente, viene del ámbito de las computadoras. Fue Stone, en 1980, quien la definió así: «la arquitectura de computadoras es la disciplina dedicada al diseño de computadoras muy específicas a partir de una colección de bloques fundamentales comunes». Es decir, se refiere al diseño abstracto de fenómenos como la percepción, el juicio o la acción, y de los elementos de los que se componen: sus funcionalidades, interfaces e interconexiones.
+>
+> En el origen de este tipo de esfuerzos está Allen Newell, quien en los años noventa propuso la creación de un modelo genérico de la cognición. Fue un éxito. Generó multitud de modelos diferentes, como si todos procuraran resolver el mismo rompecabezas, pero con distintas ideas de cómo debe verse la imagen final. La esperanza de un único modelo se agotó pronto mientras afloraba un poblado catálogo de arquitecturas cognitivas: en psicología cognitiva tenemos ACT-R, Clarion o LIDA; en IA existen Soar y Sigma; en neurociencia, Leabra y Spaun; en robótica, 4D/RCS o DIARC. Tal falta de consenso lastra el avance y pone en cuestión la eficacia explicativa de esta propuesta. La forma de construir estas teorías no proviene de un examen minucioso de la realidad, sino de una reconstrucción de las condiciones mínimas bajo las cuales la conducta podría darse, agrupando las diferentes funciones mentales en módulos. Es una reconstrucción que puede darse de múltiples formas y, por ello, es inevitable su expresión en diferentes modelos. La unificación tan deseada vendría dada por un criterio pragmático más que por la fidelidad a la realidad.
+
+Es en este contexto donde se ha indicado este descubrimiento.
+
+¿Qué se entiende por consciencia?
+
+El tema de la consciencia es viejo. Algo difícil de definir en la medida en que es un suceso de carácter privado, radicalmente diferente a cualquier otro hecho u objeto de carácter público, capaz de ser compartido y señalado. Esto ha llevado a un dualismo que apunta como realidades irreconciliables el ámbito de la interioridad de la consciencia y el del resto de objetos que pueblan la realidad.
+
+La consciencia, la inteligencia y el lenguaje están íntimamente relacionados, por ello son temas que aparecen una y otra vez:
+
+> Sin lenguaje no hay consciencia ni subjetividad: no podemos suponer una consciencia allí donde no percibimos un lenguaje (y este es nuestro problema con los animales). Pero tampoco podemos suponer una consciencia donde solo hay lenguaje (y este es nuestro problema con los LLM).
+
+Sin embargo, el tratamiento de la consciencia, por más que se trate…
+
+La querencia por este concepto tan problemático y poco definido asombra. Una y otra vez sale a la luz y atrae a investigadores hacia él como polillas hacia una vela hasta que acaban quemados. Más allá de otra consideración, hay que señalar que parte de lo atractivo de este constructo consiste en que viene cargado moralmente. En efecto, la posesión de una consciencia asocia a su portador con una entrada al campo de juego de la moral, donde podemos reconocer a la IA como sujeto capaz de derechos y deberes morales. Esto es enormemente atractivo porque nos alivia que la IA pueda comportarse bien.
+
+Queda el problema nada obvio de cómo reconocer en otro ser una consciencia. ¿Es eso posible? Se podría, en principio, a partir de «diseñar un encuentro»:
+
+> Para detectar una consciencia en una entidad en la que sospechamos que puede darse es necesario diseñar un encuentro. Por diseñar un encuentro se entiende ubicarnos en un espacio de la realidad en el que dicha entidad y su entorno estén accesibles para nosotros. Comenzaríamos a mostrarnos como una presencia disponible en ese entorno común, de la misma manera que dicha entidad lo está para nosotros. Es el momento entonces de interactuar con los elementos de ese mundo y percibir las reacciones de la entidad a la espera de detectar una acción con propósito, y utilizar ese elemento como un primer punto de encuentro con el que lograr algún tipo de comunicación.
+
+Esto es, para identificar una consciencia, buscamos un propósito en la conducta de nuestro interlocutor. Casi inadvertidamente hemos hallado un elemento que puede ayudarnos a salir de este enredo en el que la búsqueda de la consciencia nos ha metido de hoz y coz. Un hilo del que tirar en este laberinto. Esto es: la existencia de un propósito. La actuación de un sistema de IA, así como la conducta inteligente de un ser humano, comparten su carácter teleológico.
+
+Entonces, dejando a un lado el hecho de la consciencia, podemos señalar que la similitud entre una mente y una IA puede venir de otro punto de vista más formal, y señalarlo puede resultar revelador y librarnos de otras comparaciones más osadas. Me refiero a la característica común de ser sistemas con objetivos. Este hecho, común a ambos, une más de lo que parece y subraya muchos elementos que parecería que solo pudieran ser explicados por la presencia de una consciencia.
+
+Estructura básica de un sistema con objetivos.
+
 
 ## Referencias
 
